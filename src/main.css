@@ -1,6 +1,10 @@
 :root {
-    --white: #ffffff;
+    --darkGold: #8e793e;
+    --gold: #ad974f;
     --black: #000000;
+    --semiLightBlack: #231f20;
+    --semiDarkWhite: #eaeaea;
+    --white: #ffffff;
 }
 
 * {
@@ -10,7 +14,15 @@
 }
 
 html, body {
+    background-color: var(--semiLightBlack);
+    color: var(--semiDarkWhite);
     font-family: 'Courier New', Courier, monospace;
+}
+
+.active {
+    background-color: var(--gold);
+    color: var(--semiLightBlack);
+    border-radius: 0.5rem;
 }
 
 @tailwind base;
