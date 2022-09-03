@@ -1,16 +1,16 @@
 import { Routes, Route } from "react-router-dom";
 
 import Home from "./Home";
+import Error from "./Error";
 import Buy from "./Buy";
 import Sell from "./Sell";
-import Error from "./Error";
 
 function Pages() {
   return (
     <Routes>
       <Route path={"/"} element={<Home />} />
-      <Route path={"/buy"} element={<Buy />} />
-      <Route path={"/sell"} element={<Sell />} />
+      <Route path={"/store/buy"} element={<Buy />} />
+      <Route path={"/store/sell"} element={<Sell />} />
       <Route path={"/*"} element={<Error />} />
     </Routes>
   );
