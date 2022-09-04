@@ -7,7 +7,7 @@ export const StoreItems = [
       country: `United States`,
     },
     item: {
-      name: `Porsche 912`,
+      title: `Porsche 912`,
       price: `4,701,093`,
       year: 1966,
       place: `Glendale, United States`,
@@ -31,7 +31,7 @@ export const StoreItems = [
       country: `United States`,
     },
     item: {
-      name: `DUCATI Multistrada ABS`,
+      title: `DUCATI Multistrada ABS`,
       price: `753,290`,
       year: 2012,
       place: ` Buffalo, NY, United States`,
@@ -55,7 +55,7 @@ export const StoreItems = [
       country: `Italy`,
     },
     item: {
-      name: `Ford Thunderbird`,
+      title: `Ford Thunderbird`,
       price: `3,185,129`,
       year: 1956,
       place: `Brescia, Italy`,
@@ -79,7 +79,7 @@ export const StoreItems = [
       country: `Australia`,
     },
     item: {
-      name: `Hermes Kelly II Sellier 28 in Veau Epsom Leather`,
+      title: `Hermes Kelly II Sellier 28 in Veau Epsom Leather`,
       price: `1,115,513.77`,
       year: 2008,
       place: `Melbourne, Victoria, Australia`,
@@ -103,7 +103,7 @@ export const StoreItems = [
       country: `North Korea`,
     },
     item: {
-      name: `Jesus On The Cross Pendant`,
+      title: `Jesus On The Cross Pendant`,
       price: `14,664`,
       year: 1966,
       place: `Secret Place, North Korea`,
@@ -127,7 +127,7 @@ export const StoreItems = [
       country: `Turkey`,
     },
     item: {
-      name: `Alpha Spritz 116`,
+      title: `Alpha Spritz 116`,
       price: `2,944,924`,
       year: 2013,
       place: `Turkey`,
@@ -151,7 +151,7 @@ export const StoreItems = [
       country: `Turkey`,
     },
     item: {
-      name: ` Alpha Alfresco 110`,
+      title: ` Alpha Alfresco 110`,
       price: `3,320,893`,
       year: 2014,
       place: `Turkey`,
@@ -175,7 +175,7 @@ export const StoreItems = [
       country: `France`,
     },
     item: {
-      name: `Triumph "Green Legend" Steve McQueen Edition`,
+      title: `Triumph "Green Legend" Steve McQueen Edition`,
       price: `1,987,712`,
       year: 2015,
       place: `Chauvigny, France`,
@@ -199,7 +199,7 @@ export const StoreItems = [
       country: `Hong Kong`,
     },
     item: {
-      name: `Richard Mille RM 029`,
+      title: `Richard Mille RM 029`,
       price: `20,098,875`,
       year: 2018,
       place: `Hong Kong`,
@@ -223,7 +223,7 @@ export const StoreItems = [
       country: `France`,
     },
     item: {
-      name: `Pilatus PC12`,
+      title: `Pilatus PC12`,
       price: `306,766,286`,
       year: 2011,
       place: `France`,
@@ -247,7 +247,7 @@ export const StoreItems = [
       country: `Australia`,
     },
     item: {
-      name: `Tennis Chain`,
+      title: `Tennis Chain`,
       price: `69,420`,
       year: 2021,
       place: ` Melbourne, Victoria, Australia `,
@@ -271,7 +271,7 @@ export const StoreItems = [
       country: `United States`,
     },
     item: {
-      name: `Lamborghini Huracan`,
+      title: `Lamborghini Huracan`,
       price: `20,393,982`,
       year: 2017,
       place: `Bellevue, WA, United States`,
@@ -295,7 +295,7 @@ export const StoreItems = [
       country: `United States`,
     },
     item: {
-      name: `Aston Martin Vantage`,
+      title: `Aston Martin Vantage`,
       price: `10,994,981`,
       year: 2020,
       place: `Beverly Hills, CA, United States`,
@@ -319,7 +319,7 @@ export const StoreItems = [
       country: `Austria`,
     },
     item: {
-      name: `Eurocopter AS355F2`,
+      title: `Eurocopter AS355F2`,
       price: `62,946,848`,
       year: 1991,
       place: `Austria`,
@@ -343,7 +343,7 @@ export const StoreItems = [
       country: `Germany`,
     },
     item: {
-      name: `TurboProp`,
+      title: `TurboProp`,
       price: `71,805,101`,
       year: 2013,
       place: `Neustadt an der Aisch, Bavaria, Germany`,
@@ -367,7 +367,7 @@ export const StoreItems = [
       country: `United Kingdom`,
     },
     item: {
-      name: `Classic Flugel Matt Black and Red Piano`,
+      title: `Classic Flugel Matt Black and Red Piano`,
       price: `4,427,057`,
       year: 1986,
       place: `United Kingdom`,
