@@ -20,7 +20,7 @@ html, body {
 }
 
 .active {
-    background-color: var(--gold);
+    background: linear-gradient(125deg, var(--darkGold), var(--gold));
     color: var(--semiLightBlack);
     border-radius: 0.5rem;
 }
