@@ -6,7 +6,7 @@ function Store() {
     <div className="h-full w-full flex flex-wrap justify-center items-center gap-10 mt-10">
       {StoreItems &&
         StoreItems.map((product: any) => {
-          return <Card {...product} />;
+          return <Card key={product.id} {...product} />;
         })}
     </div>
   );

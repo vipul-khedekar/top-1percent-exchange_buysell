@@ -26,10 +26,7 @@ function Card({ id, owner, item, images }: CardProps) {
   const { main }: ImagesProperties = images;
 
   return (
-    <div
-      key={id}
-      className="h-[28rem] w-[22rem] bg-semiLightBlack flex flex-col justify-between items-center gap-4 border-[0.15rem] border-darkGold rounded-xl p-1 relative scale-100 ease-in duration-200 hover:scale-105 hover:border-gold hover:shadow-md hover:shadow-[#00000030]"
-    >
+    <div className="h-[28rem] w-[22rem] bg-semiLightBlack flex flex-col justify-between items-center gap-4 border-[0.15rem] border-darkGold rounded-xl p-1 relative scale-100 ease-in duration-200 hover:scale-105 hover:border-gold hover:shadow-md hover:shadow-[#00000030]">
       <img
         className="h-[14rem] w-[95%] rounded-lg mt-2 object-cover scale-100 ease-in duration-200 hover:scale-105 hover:object- cursor-pointer"
         src={main}
