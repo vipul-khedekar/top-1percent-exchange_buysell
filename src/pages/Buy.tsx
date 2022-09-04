@@ -1,10 +1,11 @@
 import Navbar from "../components/Navbar";
+import Store from "../components/Store";
 
 function Buy() {
   return (
     <div>
       <Navbar />
-      <h2>Buy</h2>
+      <Store />
     </div>
   );
 }
