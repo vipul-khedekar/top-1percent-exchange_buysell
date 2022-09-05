@@ -1,8 +1,10 @@
-import { IoCartOutline, IoDiamondSharp } from "react-icons/io5";
-
 import { NavLink } from "react-router-dom";
+import { IoCartOutline, IoDiamondSharp } from "react-icons/io5";
+import { useGlobalContext } from "../context/GlobalContext";
 
 function Navbar() {
+  const [state] = useGlobalContext();
+
   return (
     <header className="h-8 flex justify-between items-center gap-20 my-5 sticky">
       <NavLink
@@ -34,7 +36,7 @@ function Navbar() {
         <div className="relative">
           <IoCartOutline />
           <div className="bg-gold text-black h-4 w-4 flex justify-center items-center rounded-full absolute bottom-5 left-7 font-bold text-sm">
-            <p>1</p>
+            <p>{state.quantity}</p>
           </div>
         </div>
       </NavLink>
