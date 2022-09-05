@@ -1,14 +1,10 @@
-type ReducerActions = {
-  action: object;
-  type: string;
-};
-
-export function reducer(action: ReducerActions, state: object) {
-  switch (action.type) {
-    case `ADD_ITEM`:
-      return state;
-
-    default:
-      return state;
+export function reducer(action, state) {
+  if (action.type === `ADD`) {
+    return {
+      ...state,
+      quantity: action.payload,
+    };
   }
+
+  return state;
 }
