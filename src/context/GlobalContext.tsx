@@ -11,7 +11,9 @@ type GlobalContextProviderProps = {
 export const GlobalContext = createContext(GlobalState);
 
 //Provider to wrap around parent, so that global state can be accessed anywhere inside its children
-export function GlobalProvider({ children }: GlobalContextProviderProps) {
+export default function GlobalProvider({
+  children,
+}: GlobalContextProviderProps) {
   return (
     <GlobalContext.Provider value={GlobalState}>
       {children}
