@@ -1,9 +1,11 @@
+import { useState } from "react";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 
 import { StoreItems } from "../data/StoreItems";
 import { AddItemState } from "../store/reducers/addItemReducer";
 import Card from "./Card";
+import Categories from "./Categories";
 
 function Store() {
   const quantity = useSelector<AddItemState, AddItemState[`quantity`]>(
@@ -17,6 +19,8 @@ function Store() {
   });
 
   const dispatch = useDispatch();
+
+  const [list, setList] = useState(StoreItems);
 
   function addItem(id: number, title: string, price: string, image: string) {
     if (cart.length > 0) {
@@ -32,13 +36,28 @@ function Store() {
     });
   }
 
+  function categorize(category: string) {
+    if (category === `all`) {
+      setList(StoreItems);
+    } else {
+      const filteredList = StoreItems.filter((item) => {
+        return item.category === category;
+      });
+      setList(filteredList);
+    }
+  }
+
   return (
-    <main className="h-full w-full flex flex-wrap justify-center items-center gap-10 mt-24">
-      {StoreItems &&
-        StoreItems.map((product: any) => {
-          return <Card key={product.id} {...product} addItem={addItem} />;
-        })}
-    </main>
+    <div className="flex flex-col justify-center items-center gap-8 mt-24">
+      <Categories categorize={categorize} />
+
+      <main className="h-full w-full flex flex-wrap justify-center items-center gap-10">
+        {list &&
+          list.map((product: any) => {
+            return <Card key={product.id} {...product} addItem={addItem} />;
+          })}
+      </main>
+    </div>
   );
 }
 
