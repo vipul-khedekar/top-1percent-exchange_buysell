@@ -27,6 +27,14 @@ export function addItemReducer(
       };
     }
 
+    case `REMOVE_ITEM`: {
+      return {
+        ...state,
+        quantity: action.payload,
+        cartItems: action.item,
+      };
+    }
+
     default:
       return state;
   }

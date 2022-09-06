@@ -5,9 +5,16 @@ type CartContentProps = {
   title: string;
   price: string;
   image: string;
+  removeItem(id: number): void;
 };
 
-function CartContent({ id, title, price, image }: CartContentProps) {
+function CartContent({
+  id,
+  title,
+  price,
+  image,
+  removeItem,
+}: CartContentProps) {
   return (
     <div className="h-[10rem] w-[46rem] flex justify-between items-center gap-4 rounded-md border-[2px] border-gold p-4 scale-100 ease-in duration-200 hover:scale-105">
       <img
@@ -22,6 +29,7 @@ function CartContent({ id, title, price, image }: CartContentProps) {
       </div>
 
       <button
+        onClick={() => removeItem(id)}
         className="bg-gold h-8 w-8 flex justify-center items-center rounded-md scale-100 ease-in duration-200 hover:scale-105"
         type="button"
       >

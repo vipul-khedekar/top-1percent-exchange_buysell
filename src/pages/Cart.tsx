@@ -3,13 +3,34 @@ import { Link } from "react-router-dom";
 
 import { AddItemState } from "../store/reducers/addItemReducer";
 import CartContent from "../components/CartContent";
+import { useDispatch } from "react-redux";
+import { useState } from "react";
 
 function Cart() {
+  const quantity = useSelector<AddItemState, AddItemState[`quantity`]>(
+    (state) => {
+      return state.quantity;
+    }
+  );
+
   const cartItems = useSelector<AddItemState, AddItemState[`cartItems`]>(
     (state) => {
       return state.cartItems;
     }
   );
+
+  const dispatch = useDispatch();
+
+  function removeItem(id: number) {
+    const filteredList = cartItems.filter((item) => {
+      return item.id !== id;
+    });
+    dispatch({
+      type: `REMOVE_ITEM`,
+      payload: quantity - 1,
+      item: filteredList,
+    });
+  }
 
   return (
     <div className="flex flex-col justify-center items-center flex-wrap gap-8">
@@ -18,7 +39,9 @@ function Cart() {
           <h3>Cart Items</h3>
 
           {cartItems.map((item) => {
-            return <CartContent key={item.id} {...item} />;
+            return (
+              <CartContent key={item.id} {...item} removeItem={removeItem} />
+            );
           })}
 
           <Link
