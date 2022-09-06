@@ -2,28 +2,22 @@ import { GrFormAdd } from "react-icons/gr";
 
 type CardProps = {
   id: number;
-  owner: object;
-  item: object;
-  images: object;
-};
-
-type OwnerProperties = {
-  name: string;
-};
-
-type ItemProperties = {
-  title: string;
-  price: string;
-};
-
-type ImagesProps = {
-  main: string;
+  owner: {
+    name: string;
+  };
+  item: {
+    title: string;
+    price: string;
+  };
+  images: {
+    main: string;
+  };
 };
 
 function Card({ id, owner, item, images }: CardProps) {
-  const { name }: OwnerProperties = owner;
-  const { title, price }: ItemProperties = item;
-  const { main }: ImagesProps = images;
+  const { name } = owner;
+  const { title, price } = item;
+  const { main } = images;
 
   return (
     <div className="h-[28rem] w-[22rem] bg-semiLightBlack flex flex-col justify-between items-center gap-4 border-[0.15rem] border-darkGold rounded-xl p-1 relative scale-100 ease-in duration-200 hover:scale-105 hover:border-gold hover:shadow-md hover:shadow-[#00000030]">
