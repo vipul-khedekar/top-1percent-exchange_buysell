@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { GrFormAdd } from "react-icons/gr";
 
 type CardProps = {
@@ -17,14 +16,14 @@ type ItemProperties = {
   price: string;
 };
 
-type ImagesProperties = {
+type ImagesProps = {
   main: string;
 };
 
 function Card({ id, owner, item, images }: CardProps) {
   const { name }: OwnerProperties = owner;
   const { title, price }: ItemProperties = item;
-  const { main }: ImagesProperties = images;
+  const { main }: ImagesProps = images;
 
   return (
     <div className="h-[28rem] w-[22rem] bg-semiLightBlack flex flex-col justify-between items-center gap-4 border-[0.15rem] border-darkGold rounded-xl p-1 relative scale-100 ease-in duration-200 hover:scale-105 hover:border-gold hover:shadow-md hover:shadow-[#00000030]">
