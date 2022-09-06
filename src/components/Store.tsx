@@ -12,11 +12,19 @@ function Store() {
       return state.quantity;
     }
   );
+
+  const cart = useSelector<AddItemState, AddItemState[`cartItems`]>((state) => {
+    return state.cartItems;
+  });
+
   const dispatch = useDispatch();
 
   function addItem(id: number) {
-    console.log(id);
-    dispatch({ type: `ADD_ITEM`, payload: quantity + 1 });
+    dispatch({
+      type: `ADD_ITEM`,
+      payload: quantity + 1,
+      itemId: [...cart, id],
+    });
   }
 
   return (
