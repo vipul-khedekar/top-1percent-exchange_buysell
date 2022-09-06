@@ -18,12 +18,11 @@ function Store() {
 
   const dispatch = useDispatch();
 
-  function addItem(id: number, title: string, price: string) {
-    console.log(cart);
+  function addItem(id: number, title: string, price: string, image: string) {
     dispatch({
       type: `ADD_ITEM`,
       payload: quantity + 1,
-      item: [...cart, { id: id, title: title, price: price }],
+      item: [...cart, { id: id, title: title, price: price, image: image }],
     });
   }
 
