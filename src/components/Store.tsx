@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 
@@ -19,11 +18,12 @@ function Store() {
 
   const dispatch = useDispatch();
 
-  function addItem(id: number) {
+  function addItem(id: number, title: string, price: string) {
+    console.log(cart);
     dispatch({
       type: `ADD_ITEM`,
       payload: quantity + 1,
-      itemId: [...cart, id],
+      item: [...cart, { id: id, title: title, price: price }],
     });
   }
 

@@ -12,7 +12,7 @@ type CardProps = {
   images: {
     main: string;
   };
-  addItem(id: number): void;
+  addItem(id: number, title: string, price: string): void;
 };
 
 function Card({ id, owner, item, images, addItem }: CardProps) {
@@ -40,7 +40,7 @@ function Card({ id, owner, item, images, addItem }: CardProps) {
         </h3>
 
         <div
-          onClick={() => addItem(id)}
+          onClick={() => addItem(id, title, price)}
           className="h-8 w-8 bg-gradient-to-br from-darkGold to-gold flex justify-center items-center rounded-lg scale-100 ease-in duration-200 hover:scale-125 cursor-pointer"
         >
           <GrFormAdd className="text-3xl" />

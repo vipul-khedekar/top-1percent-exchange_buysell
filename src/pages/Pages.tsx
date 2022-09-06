@@ -4,6 +4,7 @@ import Home from "./Home";
 import Error from "./Error";
 import Buy from "./Buy";
 import Sell from "./Sell";
+import Cart from "./Cart";
 
 function Pages() {
   return (
@@ -11,6 +12,7 @@ function Pages() {
       <Route path={"/"} element={<Home />} />
       <Route path={"/store/buy"} element={<Buy />} />
       <Route path={"/store/sell"} element={<Sell />} />
+      <Route path={"/cart"} element={<Cart />} />
       <Route path={"/*"} element={<Error />} />
     </Routes>
   );

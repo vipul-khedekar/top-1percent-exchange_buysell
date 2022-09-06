@@ -1,12 +1,12 @@
 export interface AddItemState {
   quantity: number;
-  cartItems: Array<number>;
+  cartItems: Array<any>;
 }
 
 type Action = {
   type: string;
   payload: number;
-  itemId: Array<number>;
+  item: Array<any>;
 };
 
 const initialState = {
@@ -23,7 +23,7 @@ export function addItemReducer(
       return {
         ...state,
         quantity: action.payload,
-        cartItems: action.itemId,
+        cartItems: action.item,
       };
     }
 
