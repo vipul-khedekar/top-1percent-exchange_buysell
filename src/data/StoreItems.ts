@@ -80,7 +80,7 @@ export const StoreItems = [
     },
     item: {
       title: `Hermes Kelly II Sellier 28 in Veau Epsom Leather`,
-      price: `1,115,513.77`,
+      price: `1,115,513`,
       year: 2008,
       place: `Melbourne, Victoria, Australia`,
       about: `Sophisticated, chic, and dateless the Kelly II will compliment your outfit on any occasion. This 28 cm Hermes Kelly II Sellier in beautiful Veau Epsom leather, an embossed leather that is recognised for its durability. The colour is Noir 89 (Black) and it is complemented beautifully with the application of gold hardware.`,
