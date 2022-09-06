@@ -12,7 +12,7 @@ function Navbar() {
   );
 
   return (
-    <header className="h-8 flex justify-between items-center gap-20 my-5 sticky">
+    <nav className="h-[9vh] w-full bg-semiLightBlack flex justify-between items-center gap-20 my-5 fixed -top-6 left-0 z-10 shadow-black shadow-sm">
       <NavLink
         className="w-1 flex justify-center items-center gap-2 flex-auto text-xl hover:text-2xl"
         to={"/"}
@@ -46,7 +46,7 @@ function Navbar() {
           </div>
         </div>
       </NavLink>
-    </header>
+    </nav>
   );
 }
 
