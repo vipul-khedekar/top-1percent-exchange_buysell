@@ -41,7 +41,7 @@ function Navbar() {
       >
         <div className="relative">
           <IoCartOutline />
-          <div className="bg-gold text-black h-4 w-4 flex justify-center items-center rounded-full absolute bottom-5 left-7 font-bold text-sm">
+          <div className="bg-gold text-black h-4 w-6 flex justify-center items-center rounded-full absolute bottom-5 left-7 font-bold text-sm">
             <p>{quantity}</p>
           </div>
         </div>
