@@ -33,12 +33,12 @@ function Store() {
   }
 
   return (
-    <div className="h-full w-full flex flex-wrap justify-center items-center gap-10 mt-10">
+    <main className="h-full w-full flex flex-wrap justify-center items-center gap-10 mt-24">
       {StoreItems &&
         StoreItems.map((product: any) => {
           return <Card key={product.id} {...product} addItem={addItem} />;
         })}
-    </div>
+    </main>
   );
 }
 
