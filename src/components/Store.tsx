@@ -19,6 +19,12 @@ function Store() {
   const dispatch = useDispatch();
 
   function addItem(id: number, title: string, price: string, image: string) {
+    if (cart.length > 0) {
+      for (let i = 0; i < cart.length; i++) {
+        if (cart[i].id === id) return;
+      }
+    }
+
     dispatch({
       type: `ADD_ITEM`,
       payload: quantity + 1,
