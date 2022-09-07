@@ -52,6 +52,13 @@ function Seller() {
     }
   }
 
+  function deleteAListing(id: number) {
+    const list = myListing.filter((item) => {
+      return item.id !== id;
+    });
+    setMyListing(list);
+  }
+
   return (
     <main className="flex flex-col justify-center items-center gap-6 mt-20">
       <h4 className="text-semiDarkWhite text-lg">
@@ -145,10 +152,16 @@ function Seller() {
         <section className="flex flex-col justify-center items-center gap-2">
           <h3 className="text-semiDarkWhite text-lg">My Listings</h3>
 
-          <div className="flex flex-wrap justify-center items-center gap-4">
+          <div className="w-full flex flex-wrap justify-center items-center gap-4 p-2">
             {myListing &&
               myListing.map((item) => {
-                return <ListingCard key={item.id} {...item} />;
+                return (
+                  <ListingCard
+                    key={item.id}
+                    {...item}
+                    deleteAListing={deleteAListing}
+                  />
+                );
               })}
           </div>
         </section>

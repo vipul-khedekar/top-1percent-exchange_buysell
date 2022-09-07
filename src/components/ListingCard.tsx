@@ -15,9 +15,17 @@ type ListingCardProps = {
   images: {
     main: string;
   };
+  deleteAListing(id: number): void;
 };
 
-function ListingCard({ id, category, owner, item, images }: ListingCardProps) {
+function ListingCard({
+  id,
+  category,
+  owner,
+  item,
+  images,
+  deleteAListing,
+}: ListingCardProps) {
   const { name } = owner;
   const { title, price } = item;
   const { main } = images;
@@ -37,6 +45,7 @@ function ListingCard({ id, category, owner, item, images }: ListingCardProps) {
       </div>
 
       <button
+        onClick={() => deleteAListing(id)}
         className="h-6 w-6 bg-gradient-to-br from-darkGold to-gold flex justify-center items-center rounded-sm scale-100 ease-in duration-100 hover:scale-105"
         type="button"
       >
