@@ -51,17 +51,23 @@ function SellerDetails({ id }: ImageGridProps) {
   }
 
   function showTalkMessage() {
-    setMessage(`Seller is notified.`);
     setTimeout(() => {
-      setMessage(``);
-    }, 2000);
+      setMessage(`Seller is notified.`);
+
+      setTimeout(() => {
+        setMessage(``);
+      }, 2000);
+    }, 400);
   }
 
   function showBuyMessage() {
-    setMessage(`Item added to cart.`);
     setTimeout(() => {
-      setMessage(``);
-    }, 2000);
+      setMessage(`Item added to cart.`);
+
+      setTimeout(() => {
+        setMessage(``);
+      }, 2000);
+    }, 400);
 
     addToCart();
   }
