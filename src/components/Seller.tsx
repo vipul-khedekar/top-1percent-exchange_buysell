@@ -21,10 +21,17 @@ function Seller() {
     ) {
       const item = {
         id: Date.now(),
-        title: title,
-        price: price,
-        seller: seller,
-        imageLink: imageLink,
+        category: `myList`,
+        owner: {
+          name: seller,
+        },
+        item: {
+          title: title,
+          price: price,
+        },
+        images: {
+          main: imageLink,
+        },
       };
       myListing.push(item);
 
