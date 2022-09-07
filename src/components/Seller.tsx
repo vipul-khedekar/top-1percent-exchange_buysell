@@ -1,14 +1,13 @@
 import { useState } from "react";
 
-import MyListings from "./MyListings";
+import ListingCard from "./ListingCard";
 
 function Seller() {
   const [title, setTitle] = useState(``);
   const [price, setPrice] = useState(``);
   const [seller, setSeller] = useState(``);
   const [imageLink, setImageLink] = useState(``);
-
-  const myListing: Array<object> = [];
+  const [myListing, setMyListing] = useState([]);
 
   function uploadMyListing(e: object) {
     e.preventDefault();
@@ -36,6 +35,7 @@ function Seller() {
         },
       };
       myListing.push(item);
+      setMyListing(myListing);
 
       setTitle(``);
       setPrice(``);
@@ -90,10 +90,10 @@ function Seller() {
 
           <input
             onChange={(e) => setPrice(e.target.value)}
-            className="h-8 w-96 bg-black rounded-sm p-4 text-semiDarkWhite"
+            className="h-8 w-96 bg-black rounded-sm p-4 text-semiDarkWhite appearance-none"
             value={price}
             id="price"
-            type="text"
+            type="number"
             placeholder="How much do you think is it's worth?"
             pattern="[0-9]{1,}"
             required
@@ -141,11 +141,16 @@ function Seller() {
         </button>
       </form>
 
-      {myListing.length === 0 && (
+      {myListing.length > 0 && (
         <section className="flex flex-col justify-center items-center gap-2">
           <h3 className="text-semiDarkWhite text-lg">My Listings</h3>
 
-          <MyListings key={myListing.id} {...myListing} />
+          <div className="flex flex-wrap justify-center items-center gap-4">
+            {myListing &&
+              myListing.map((item) => {
+                return <ListingCard key={item.id} {...item} />;
+              })}
+          </div>
         </section>
       )}
     </main>
