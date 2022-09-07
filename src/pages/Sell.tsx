@@ -1,11 +1,11 @@
-import { NavLink, Route, Routes } from "react-router-dom";
 import Navbar from "../components/Navbar";
+import Seller from "../components/Seller";
 
 function Sell() {
   return (
     <div>
       <Navbar />
-      <h3>Sell</h3>
+      <Seller />
     </div>
   );
 }
