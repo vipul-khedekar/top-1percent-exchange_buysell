@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import MyListings from "./MyListings";
+
 function Seller() {
   const [title, setTitle] = useState(``);
   const [price, setPrice] = useState(``);
@@ -51,11 +53,17 @@ function Seller() {
   }
 
   return (
-    <main className="flex flex-col justify-center items-center gap-8 mt-24">
-      <h4 className="text-semiDarkWhite">What would you like to sell?</h4>
+    <main className="flex flex-col justify-center items-center gap-6 mt-20">
+      <h4 className="text-semiDarkWhite text-lg">
+        What would you like to sell?
+      </h4>
+
+      <h4 className="text-semiDarkWhite text-sm -mt-6">
+        (Upload the item details to see your listings.)
+      </h4>
 
       <form
-        className="flex flex-col justify-center items-center gap-4"
+        className="flex flex-col justify-center items-center gap-3 p-4 border-b-2 border-black"
         action="POST"
       >
         <div>
@@ -132,6 +140,14 @@ function Seller() {
           Upload
         </button>
       </form>
+
+      {myListing.length === 0 && (
+        <section className="flex flex-col justify-center items-center gap-2">
+          <h3 className="text-semiDarkWhite text-lg">My Listings</h3>
+
+          <MyListings key={myListing.id} {...myListing} />
+        </section>
+      )}
     </main>
   );
 }
