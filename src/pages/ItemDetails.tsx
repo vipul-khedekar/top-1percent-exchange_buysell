@@ -12,12 +12,12 @@ function ItemDetails() {
     <div>
       <Navbar />
 
-      <section className="flex flex-col justify-start items-center gap-4 mt-24">
-        <ImageGrid key={params.id} id={params.id} />
+      <section className="flex flex-col justify-start items-center gap-4 mt-20">
+        <ImageGrid id={params.id} />
 
         <div className="flex justify-between items-start gap-8">
-          <ItemGrid key={params.id} id={params.id} />
-          <SellerDetails key={params.id} id={params.id} />
+          <ItemGrid id={params.id} />
+          <SellerDetails id={params.id} />
         </div>
       </section>
     </div>
