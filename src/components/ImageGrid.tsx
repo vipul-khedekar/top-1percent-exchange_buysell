@@ -11,9 +11,9 @@ function ImageGrid({ id }: ImageGridProps) {
   });
 
   return (
-    <article className="h-[45vh] w-[50rem] flex justify-center items-center">
+    <article className="h-[350px] w-[800px] flex justify-center items-center px-8">
       <img
-        className="h-[40vh] w-auto object-cover scale-100 ease-in duration-200 hover:scale-105"
+        className="h-[335px] w-[335px] object-cover scale-100 ease-in duration-200 hover:scale-105"
         src={product.images.main || DefaultImage}
         alt={product.item.title}
       />
@@ -22,7 +22,7 @@ function ImageGrid({ id }: ImageGridProps) {
         {product.images.secondary.map((image) => {
           return (
             <img
-              className="h-[19vh] w-[10rem] object-cover scale-100 ease-in duration-200 hover:scale-110"
+              className="h-[160px] w-[160px] object-cover scale-100 ease-in duration-200 hover:scale-110"
               src={image}
               alt="secondary-image"
             />
