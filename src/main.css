@@ -19,6 +19,11 @@ html, body {
     font-family: 'Courier New', Courier, monospace;
 }
 
+button:active {
+    background-color: var(--darkGold);
+    transform: translate(0px, 0.3rem);
+}
+
 .active {
     background: linear-gradient(125deg, var(--darkGold), var(--gold));
     color: var(--semiLightBlack);
