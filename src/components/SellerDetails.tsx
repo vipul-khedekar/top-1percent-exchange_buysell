@@ -73,7 +73,7 @@ function SellerDetails({ id }: ImageGridProps) {
   }
 
   return (
-    <article className="w-[380px] flex flex-col justify-between items-center gap-4 p-4 border-[2.5px] border-gold rounded-md text-sm">
+    <article className="w-[340px] flex flex-col justify-between items-center gap-4 p-4 border-[2.5px] border-gold rounded-md text-sm">
       <p>Seller: {product.owner.name}</p>
 
       <p>{product.owner.country}</p>
