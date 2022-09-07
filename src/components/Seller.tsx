@@ -1,13 +1,24 @@
 import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 
 import ListingCard from "./ListingCard";
+import { AddItemState } from "../store/reducers/addItemReducer";
 
 function Seller() {
+  const sellerListing = useSelector<AddItemState, AddItemState[`listings`]>(
+    (state) => {
+      return state.listings;
+    }
+  );
+
+  const dispatch = useDispatch();
+
   const [title, setTitle] = useState(``);
   const [price, setPrice] = useState(``);
   const [seller, setSeller] = useState(``);
   const [imageLink, setImageLink] = useState(``);
-  const [myListing, setMyListing] = useState([]);
+  const [myListing, setMyListing] = useState(sellerListing);
 
   function uploadMyListing(e: object) {
     e.preventDefault();
@@ -37,6 +48,8 @@ function Seller() {
       myListing.push(item);
       setMyListing(myListing);
 
+      dispatch({ type: `ADD_LISTING`, listItems: myListing });
+
       setTitle(``);
       setPrice(``);
       setSeller(``);
@@ -57,6 +70,8 @@ function Seller() {
       return item.id !== id;
     });
     setMyListing(list);
+
+    dispatch({ type: `ADD_LISTING`, listItems: list });
   }
 
   return (
@@ -153,8 +168,8 @@ function Seller() {
           <h3 className="text-semiDarkWhite text-lg">My Listings</h3>
 
           <div className="w-full flex flex-wrap justify-center items-center gap-4 p-2">
-            {myListing &&
-              myListing.map((item) => {
+            {sellerListing &&
+              sellerListing.map((item) => {
                 return (
                   <ListingCard
                     key={item.id}
