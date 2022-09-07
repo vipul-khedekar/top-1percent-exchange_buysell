@@ -10,19 +10,47 @@ function Home() {
         alt="home-background"
       />
 
-      <div className="h-[500px] w-[500px] ml-8 absolute z-10 top-72">
-        <div>
+      <div className="h-[500px] lg:w-auto md:w-[500px] flex flex-col justify-center items-start gap-8 ml-12 absolute z-10 top-40">
+        <div className="text-[5.5rem] leading-[1] font-bold font-ptserif">
           <p>The</p>
-          <p>Top 1%'s</p>
-          <p>Exchange Club</p>
+          <p className="-mt-7">
+            Top <span className="text-[7.5rem]">1%</span>'s
+          </p>
+          <p>
+            <span className="bg-gradient-to-tr from-darkGold to-gold bg-clip-text text-transparent">
+              Exchange
+            </span>{" "}
+            Club
+          </p>
         </div>
 
-        <small>abc</small>
-
         <div>
-          <Link to={"/store/buy"}>I'm here to buy</Link>
+          <p className="font-extralight italic text-sm">
+            A secondhand high-value trading marketplace.
+          </p>
+          <p className="font-extralight italic text-sm">
+            Buy or sell used luxury products.
+          </p>
+          <p className="font-extralight italic text-sm">
+            Browse through the catalogue of all available items put on sell by
+            people like you.
+          </p>
+        </div>
 
-          <Link to={"/store/sell"}>I'm here to sell</Link>
+        <div className="flex gap-6">
+          <Link
+            className="bg-gradient-to-tr from-darkGold to-gold px-4 py-2 rounded-md text-semiLightBlack font-bold scale-100 ease-in duration-150 hover:scale-110"
+            to={"/store/buy"}
+          >
+            I'm here to buy
+          </Link>
+
+          <Link
+            className="bg-gradient-to-tr from-darkGold to-gold px-4 py-2 rounded-md text-semiLightBlack font-bold scale-100 ease-in duration-150 hover:scale-110"
+            to={"/store/sell"}
+          >
+            I'm here to sell
+          </Link>
         </div>
       </div>
     </div>
