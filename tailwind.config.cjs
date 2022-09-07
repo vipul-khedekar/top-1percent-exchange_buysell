@@ -11,6 +11,11 @@ module.exports = {
         semiDarkWhite: "#eaeaea",
         white: "#ffffff",
       },
+      fontFamily: {
+        raleway: "Raleway, sans-serif",
+        ubuntu: "Ubuntu, sans-serif",
+        ptserif: "PT Serif, serif",
+      },
     },
   },
   plugins: [],

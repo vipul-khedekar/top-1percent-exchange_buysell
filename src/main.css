@@ -5,6 +5,10 @@
     --semiLightBlack: #231f20;
     --semiDarkWhite: #eaeaea;
     --white: #ffffff;
+
+    --raleway: 'Raleway', sans-serif; 
+    --ubuntu: 'Ubuntu', sans-serif;
+    --ptserif: 'PT Serif', serif;
 }
 
 * {
@@ -16,7 +20,7 @@
 html, body {
     background-color: var(--semiLightBlack);
     color: var(--semiDarkWhite);
-    font-family: 'Courier New', Courier, monospace;
+    font-family: var(--ubuntu);
 }
 
 button:active {
