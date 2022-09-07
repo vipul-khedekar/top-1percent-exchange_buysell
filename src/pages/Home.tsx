@@ -10,12 +10,14 @@ function Home() {
         alt="home-background"
       />
 
-      <div className="h-[500px] lg:w-auto md:w-[500px] flex flex-col justify-center items-start gap-8 ml-12 absolute z-10 top-40">
+      <div className="h-[500px] lg:w-auto md:w-[510px] flex flex-col justify-center items-start gap-8 ml-12 absolute z-10 top-40">
         <div className="text-[5.5rem] leading-[1] font-bold font-ptserif">
           <p>The</p>
+
           <p className="-mt-7">
             Top <span className="text-[7.5rem]">1%</span>'s
           </p>
+
           <p>
             <span className="bg-gradient-to-tr from-darkGold to-gold bg-clip-text text-transparent">
               Exchange
@@ -25,14 +27,14 @@ function Home() {
         </div>
 
         <div>
-          <p className="font-extralight italic text-sm">
-            A secondhand high-value trading marketplace.
+          <p className="italic text-sm">‣ Buy or sell used luxury products.</p>
+
+          <p className="italic text-sm">
+            ‣ A members-only secondhand high-value trading marketplace.
           </p>
-          <p className="font-extralight italic text-sm">
-            Buy or sell used luxury products.
-          </p>
-          <p className="font-extralight italic text-sm">
-            Browse through the catalogue of all available items put on sell by
+
+          <p className="italic text-sm">
+            ‣ Browse through the catalogue of all available items put on sell by
             people like you.
           </p>
         </div>
