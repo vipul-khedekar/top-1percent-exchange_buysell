@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
+import { Link } from "react-router-dom";
 
 import { StoreItems } from "../data/StoreItems";
 import { AddItemState } from "../store/reducers/addItemReducer";
@@ -54,7 +55,11 @@ function Store() {
       <main className="h-full w-full flex flex-wrap justify-center items-center gap-10">
         {list &&
           list.map((product: any) => {
-            return <Card key={product.id} {...product} addItem={addItem} />;
+            return (
+              <Link to={`/store/item/${product.id}`}>
+                <Card key={product.id} {...product} addItem={addItem} />
+              </Link>
+            );
           })}
       </main>
     </div>
