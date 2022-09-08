@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import { AddItemState } from "../store/reducers/addItemReducer";
 import CartContent from "../components/CartContent";
 import { useDispatch } from "react-redux";
-import { useState } from "react";
 
 function Cart() {
   const quantity = useSelector<AddItemState, AddItemState[`quantity`]>(
@@ -21,7 +20,9 @@ function Cart() {
 
   const dispatch = useDispatch();
 
-  function removeItem(id: number) {
+  function removeItem(id: number, e: React.MouseEvent<Element, MouseEvent>) {
+    e.preventDefault();
+
     const filteredList = cartItems.filter((item) => {
       return item.id !== id;
     });

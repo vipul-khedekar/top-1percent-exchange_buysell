@@ -5,7 +5,7 @@ type CartContentProps = {
   title: string;
   price: string;
   image: string;
-  removeItem(id: number): void;
+  removeItem(id: number, e: React.MouseEvent<Element, MouseEvent>): void;
 };
 
 function CartContent({
@@ -29,7 +29,7 @@ function CartContent({
       </div>
 
       <button
-        onClick={() => removeItem(id)}
+        onClick={(e) => removeItem(id, e)}
         className="bg-gold h-8 w-8 flex justify-center items-center rounded-md scale-100 ease-in duration-200 hover:scale-105"
         type="button"
       >
