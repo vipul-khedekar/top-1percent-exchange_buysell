@@ -40,7 +40,9 @@ function Cart() {
 
           {cartItems.map((item) => {
             return (
-              <CartContent key={item.id} {...item} removeItem={removeItem} />
+              <Link to={`/store/item/${item.id}`}>
+                <CartContent key={item.id} {...item} removeItem={removeItem} />
+              </Link>
             );
           })}
 
