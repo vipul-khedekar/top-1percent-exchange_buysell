@@ -36,7 +36,7 @@ function Cart() {
     <div className="flex flex-col justify-center items-center flex-wrap gap-8">
       {cartItems.length > 0 ? (
         <div className="flex flex-col justify-center items-center gap-8 text-2xl">
-          <h3>Cart Items</h3>
+          <h3 className="font-ptserif">Cart Items</h3>
 
           {cartItems.map((item) => {
             return (
@@ -60,7 +60,7 @@ function Cart() {
         </div>
       ) : (
         <>
-          <h3 className="text-white">Cart is empty</h3>
+          <h3 className="text-white font-ptserif">Cart is empty</h3>
 
           <Link
             className="bg-gradient-to-br from-darkGold to-gold rounded-lg py-1 px-4 ease-in duration-200 hover:scale-110"

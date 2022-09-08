@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function Error() {
   return (
     <div className="h-full w-full flex flex-col justify-center items-center gap-8 mt-32">
-      <h1 className="text-semiDarkWhite text-4xl">
+      <h1 className="text-semiDarkWhite text-4xl font-ptserif">
         Whoopse!!! Such page doesn't exists.
       </h1>
 

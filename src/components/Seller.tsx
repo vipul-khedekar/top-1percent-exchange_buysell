@@ -76,11 +76,11 @@ function Seller() {
 
   return (
     <main className="flex flex-col justify-center items-center gap-6 mt-20">
-      <h4 className="text-semiDarkWhite text-lg">
+      <h4 className="text-semiDarkWhite text-lg font-ptserif">
         What would you like to sell?
       </h4>
 
-      <h4 className="text-semiDarkWhite text-sm -mt-6">
+      <h4 className="text-semiDarkWhite -mt-6 font-ptserif">
         (Upload the item details to see your listings.)
       </h4>
 
@@ -165,7 +165,9 @@ function Seller() {
 
       {myListing.length > 0 && (
         <section className="flex flex-col justify-center items-center gap-2">
-          <h3 className="text-semiDarkWhite text-lg">My Listings</h3>
+          <h3 className="text-semiDarkWhite text-lg font-ptserif">
+            My Listings
+          </h3>
 
           <div className="w-full flex flex-wrap justify-center items-center gap-4 p-2">
             {sellerListing &&

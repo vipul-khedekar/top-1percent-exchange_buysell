@@ -15,7 +15,7 @@ function Categories({ categorize }: CategoryProps) {
   };
 
   return (
-    <nav className="h-6 flex justify-center items-center gap-10">
+    <nav className="h-6 flex justify-center items-center gap-10 font-raleway underline-offset-4">
       <button
         onClick={() => categorize(categories.all)}
         className="underline hover:text-gold"

@@ -74,11 +74,11 @@ function SellerDetails({ id }: ImageGridProps) {
 
   return (
     <article className="w-[340px] flex flex-col justify-between items-center gap-4 p-4 border-[2.5px] border-gold rounded-md text-sm">
-      <p>Seller: {product.owner.name}</p>
+      <p className="font-raleway">Seller: {product.owner.name}</p>
 
-      <p>{product.owner.country}</p>
+      <p className="font-raleway">{product.owner.country}</p>
 
-      <div className="h-4 my-1 italic font-light text-sm">{message}</div>
+      <div className="h-4 my-1 italic font-raleway">{message}</div>
 
       <div className="flex gap-4">
         <button

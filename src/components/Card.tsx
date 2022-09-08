@@ -31,12 +31,12 @@ function Card({ id, owner, item, images, addItem }: CardProps) {
       <div className="flex flex-col justify-center items-center font-bold text-center">
         <h3 className="text-semiDarkWhite text-lg">{title}</h3>
 
-        <h3 className="text-darkGold text-base">₹{price}</h3>
+        <h3 className="text-gold font-light">₹{price}</h3>
       </div>
 
       <div className="flex justify-between items-center gap-32 mb-5 text-semiLightBlack">
-        <h3 className="w-20 text-semiDarkWhite text-sm text-center">
-          Seller {name}
+        <h3 className="w-36 text-semiDarkWhite text-sm text-center font-raleway">
+          Seller: {name}
         </h3>
 
         <div
