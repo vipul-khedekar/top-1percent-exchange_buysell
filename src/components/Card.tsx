@@ -12,7 +12,13 @@ type CardProps = {
   images: {
     main: string;
   };
-  addItem(id: number, title: string, price: string, main: string): void;
+  addItem(
+    id: number,
+    title: string,
+    price: string,
+    main: string,
+    e: React.MouseEvent<Element, MouseEvent>
+  ): void;
 };
 
 function Card({ id, owner, item, images, addItem }: CardProps) {
@@ -40,7 +46,7 @@ function Card({ id, owner, item, images, addItem }: CardProps) {
         </h3>
 
         <div
-          onClick={() => addItem(id, title, price, main)}
+          onClick={(e) => addItem(id, title, price, main, e)}
           className="h-8 w-8 bg-gradient-to-br from-darkGold to-gold flex justify-center items-center rounded-lg scale-100 ease-in duration-200 hover:scale-125 cursor-pointer"
         >
           <GrFormAdd className="text-3xl" />

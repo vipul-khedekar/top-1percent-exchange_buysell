@@ -23,7 +23,15 @@ function Store() {
 
   const [list, setList] = useState(StoreItems);
 
-  function addItem(id: number, title: string, price: string, image: string) {
+  function addItem(
+    id: number,
+    title: string,
+    price: string,
+    image: string,
+    e: React.MouseEvent<Element, MouseEvent>
+  ) {
+    e.preventDefault();
+
     if (cart.length > 0) {
       for (let i = 0; i < cart.length; i++) {
         if (cart[i].id === id) return;
