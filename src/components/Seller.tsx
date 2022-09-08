@@ -20,7 +20,7 @@ function Seller() {
   const [imageLink, setImageLink] = useState(``);
   const [myListing, setMyListing] = useState(sellerListing);
 
-  function uploadMyListing(e: object) {
+  function uploadMyListing(e: React.MouseEvent<Element, MouseEvent>) {
     e.preventDefault();
 
     if (
