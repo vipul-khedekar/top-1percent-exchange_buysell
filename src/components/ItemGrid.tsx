@@ -1,7 +1,7 @@
 import { StoreItems } from "../data/StoreItems";
 
 type ImageGridProps = {
-  id: number;
+  id: any;
 };
 
 function ItemDetails({ id }: ImageGridProps) {

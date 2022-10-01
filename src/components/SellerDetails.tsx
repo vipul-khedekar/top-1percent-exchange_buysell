@@ -6,7 +6,7 @@ import { StoreItems } from "../data/StoreItems";
 import { AddItemState } from "../store/reducers/addItemReducer";
 
 type ImageGridProps = {
-  id: number;
+  id: any;
 };
 
 function SellerDetails({ id }: ImageGridProps) {

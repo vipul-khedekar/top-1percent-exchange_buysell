@@ -2,7 +2,7 @@ import { StoreItems } from "../data/StoreItems";
 import DefaultImage from "../images/default-image-display.jpg";
 
 type ImageGridProps = {
-  id: number;
+  id: any;
 };
 
 function ImageGrid({ id }: ImageGridProps) {
