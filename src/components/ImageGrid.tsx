@@ -19,7 +19,7 @@ function ImageGrid({ id }: ImageGridProps) {
       />
 
       <div className="flex flex-row flex-wrap justify-center items-center gap-4">
-        {product.images.secondary.map((image) => {
+        {product.images.secondary.map((image: string) => {
           return (
             <img
               className="h-[160px] w-[160px] object-cover rounded-lg scale-100 ease-in duration-200 hover:scale-110"
