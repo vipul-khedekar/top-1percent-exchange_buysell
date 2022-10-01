@@ -24,7 +24,7 @@ function SellerDetails({ id }: ImageGridProps) {
 
   const [message, setMessage] = useState(``);
 
-  const product = StoreItems.find((item) => {
+  const product: any = StoreItems.find((item) => {
     return item.id === Number(id);
   });
 
