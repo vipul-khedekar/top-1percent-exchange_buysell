@@ -75,11 +75,11 @@ function Seller() {
 
   return (
     <main className="flex flex-col justify-center items-center gap-6 mt-20">
-      <h4 className="text-semiDarkWhite text-lg font-ptserif">
+      <h4 className="text-semiDarkWhite font-ptserif text-lg">
         What would you like to sell?
       </h4>
 
-      <h4 className="text-semiDarkWhite -mt-6 font-ptserif">
+      <h4 className="-mt-6 text-semiDarkWhite font-ptserif">
         (Upload the item details to see your listings.)
       </h4>
 
@@ -94,7 +94,7 @@ function Seller() {
 
           <input
             onChange={(e) => setTitle(e.target.value)}
-            className="h-8 w-96 bg-black rounded-sm p-4 text-semiDarkWhite"
+            className="h-8 w-96 bg-black p-4 rounded-sm text-semiDarkWhite"
             value={title}
             id="title"
             type="text"
@@ -111,7 +111,7 @@ function Seller() {
 
           <input
             onChange={(e) => setPrice(e.target.value)}
-            className="h-8 w-96 bg-black rounded-sm p-4 text-semiDarkWhite appearance-none"
+            className="h-8 w-96 bg-black p-4 rounded-sm text-semiDarkWhite appearance-none"
             value={price}
             id="price"
             type="number"
@@ -128,7 +128,7 @@ function Seller() {
 
           <input
             onChange={(e) => setSeller(e.target.value)}
-            className="h-8 w-96 bg-black rounded-sm p-4 text-semiDarkWhite"
+            className="h-8 w-96 bg-black p-4 rounded-sm text-semiDarkWhite"
             value={seller}
             id="owner"
             type="text"
@@ -145,7 +145,7 @@ function Seller() {
 
           <input
             onChange={(e) => setImageLink(e.target.value)}
-            className="h-8 w-96 bg-black rounded-sm p-4 text-semiDarkWhite"
+            className="h-8 w-96 bg-black p-4 rounded-sm text-semiDarkWhite"
             value={imageLink}
             id="imageLink"
             type="text"
@@ -155,7 +155,7 @@ function Seller() {
 
         <button
           onClick={(e) => uploadMyListing(e)}
-          className="bg-gradient-to-br from-darkGold to-gold rounded-md py-1 px-4 text-semiDarkWhite scale-100 ease-in duration-100 hover:scale-105"
+          className="bg-gradient-to-br from-darkGold to-gold py-1 px-4 rounded-md text-semiDarkWhite scale-100 ease-in duration-100 hover:scale-105"
           type="submit"
         >
           Upload
@@ -164,7 +164,7 @@ function Seller() {
 
       {myListing.length > 0 && (
         <section className="flex flex-col justify-center items-center gap-2">
-          <h3 className="text-semiDarkWhite text-lg font-ptserif">
+          <h3 className="text-semiDarkWhite font-ptserif text-lg">
             My Listings
           </h3>
 

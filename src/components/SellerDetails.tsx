@@ -74,7 +74,7 @@ function SellerDetails({ id }: ImageGridProps) {
 
       <p className="font-raleway">{product.owner.country}</p>
 
-      <div className="h-4 my-1 italic font-raleway">{message}</div>
+      <div className="h-4 my-1 font-raleway italic">{message}</div>
 
       <div className="flex gap-4">
         <button

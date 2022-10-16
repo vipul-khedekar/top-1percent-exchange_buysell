@@ -17,6 +17,7 @@ function ItemDetails() {
 
         <div className="flex justify-between items-start gap-4 px-8">
           <ItemGrid id={params.id} />
+
           <SellerDetails id={params.id} />
         </div>
       </section>

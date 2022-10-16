@@ -48,14 +48,14 @@ function Cart() {
           })}
 
           <Link
-            className="bg-gradient-to-br from-darkGold to-gold rounded-lg py-1 px-4 text-lg ease-in duration-200 hover:scale-110"
+            className="bg-gradient-to-br from-darkGold to-gold py-1 px-4 rounded-lg text-lg ease-in duration-200 hover:scale-110"
             to="/store/buy"
           >
             Return to Store
           </Link>
 
           <Link
-            className="bg-gradient-to-br from-darkGold to-gold rounded-lg py-1 px-4 text-lg ease-in duration-200 hover:scale-110"
+            className="bg-gradient-to-br from-darkGold to-gold py-1 px-4 rounded-lg text-lg ease-in duration-200 hover:scale-110"
             to="/"
           >
             Return to Home
@@ -66,14 +66,14 @@ function Cart() {
           <h3 className="text-white font-ptserif">Cart is empty</h3>
 
           <Link
-            className="bg-gradient-to-br from-darkGold to-gold rounded-lg py-1 px-4 ease-in duration-200 hover:scale-110"
+            className="bg-gradient-to-br from-darkGold to-gold py-1 px-4 rounded-lg ease-in duration-200 hover:scale-110"
             to="/store/buy"
           >
             Return to Store
           </Link>
 
           <Link
-            className="bg-gradient-to-br from-darkGold to-gold rounded-lg py-1 px-4 ease-in duration-200 hover:scale-110"
+            className="bg-gradient-to-br from-darkGold to-gold py-1 px-4 rounded-lg ease-in duration-200 hover:scale-110"
             to="/"
           >
             Return to Home

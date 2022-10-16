@@ -31,17 +31,19 @@ function ListingCard({
   const { main } = images;
 
   return (
-    <article className="h-28 w-96 flex flex-wrap justify-between items-center gap-6 px-2 py-1 border-[2px] border-darkGold rounded-md relative hover:shadow-black hover:shadow-md hover:border-gold">
+    <article className="h-28 w-96 flex flex-wrap justify-between items-center gap-6 px-2 py-1 border-[2px] border-darkGold rounded-md relative hover:border-gold hover:shadow-black hover:shadow-md">
       <img
-        className="h-24 w-28 object-cover rounded-md scale-100 ease-in duration-200 hover:scale-125"
+        className="h-24 w-28 rounded-md object-cover scale-100 ease-in duration-200 hover:scale-125"
         src={!main.startsWith(`https://`) ? DefaultImage : main}
         alt={title}
       />
 
       <div className="flex flex-col justify-center items-center">
-        <p className="text-center text-semiDarkWhite">{title}</p>
-        <p className="text-center text-semiDarkWhite text-sm">₹{price}</p>
-        <p className="text-center text-semiDarkWhite text-xs">{name}</p>
+        <p className="text-semiDarkWhite text-center">{title}</p>
+
+        <p className="text-semiDarkWhite text-sm text-center">₹{price}</p>
+
+        <p className="text-semiDarkWhite text-xs text-center">{name}</p>
       </div>
 
       <button

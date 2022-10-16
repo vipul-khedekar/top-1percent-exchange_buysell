@@ -6,13 +6,13 @@ function Home() {
   return (
     <div className="-m-5 relative">
       <img
-        className="h-[100vh] w-[100vw] brightness-[80%] object-cover relative z-10"
+        className="h-[100vh] w-[100vw] object-cover relative z-10 brightness-[80%]"
         src={HomeBackground}
         alt="home-background"
       />
 
-      <div className="h-[500px] lg:w-auto md:w-[510px] flex flex-col justify-center items-start gap-8 ml-12 absolute z-10 top-40">
-        <div className="text-[5.5rem] leading-[1] font-bold font-ptserif">
+      <div className="h-[500px] md:w-[510px] lg:w-auto flex flex-col justify-center items-start gap-8 ml-12 absolute z-10 top-40">
+        <div className="font-ptserif text-[5.5rem] font-bold leading-[1]">
           <p>The</p>
 
           <p className="-mt-7">
@@ -28,13 +28,13 @@ function Home() {
         </div>
 
         <div>
-          <p className="italic text-sm">‣ Buy or sell used luxury products.</p>
+          <p className="text-sm italic">‣ Buy or sell used luxury products.</p>
 
-          <p className="italic text-sm">
+          <p className="text-sm italic">
             ‣ A members-only secondhand high-value trading marketplace.
           </p>
 
-          <p className="italic text-sm">
+          <p className="text-sm italic">
             ‣ Browse through the catalogue of all available items put on sell by
             people like you.
           </p>

@@ -5,6 +5,7 @@ function Sell() {
   return (
     <div>
       <Navbar />
+
       <Seller />
     </div>
   );

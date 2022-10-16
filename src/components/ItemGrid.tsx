@@ -10,10 +10,10 @@ function ItemDetails({ id }: ImageGridProps) {
   });
 
   return (
-    <article className="h-[330px] w-[400px] border-[2.5px] border-gold rounded-md p-4 overflow-y-scroll">
+    <article className="h-[330px] w-[400px] p-4 border-[2.5px] border-gold rounded-md overflow-y-scroll">
       <div className="flex justify-between items-center gap-28 text-2xl">
         <p>{product.item.title}</p>
-        <p className="italic text-lg">yr.{product.item.year}</p>
+        <p className="text-lg italic">yr.{product.item.year}</p>
       </div>
       <p className="text-darkGold hover:text-gold text-lg">
         ₹{product.item.price}

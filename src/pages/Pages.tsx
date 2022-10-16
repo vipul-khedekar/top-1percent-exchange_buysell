@@ -11,10 +11,15 @@ function Pages() {
   return (
     <Routes>
       <Route path={"/"} element={<Home />} />
+
       <Route path={"/store/buy"} element={<Buy />} />
+
       <Route path={"/store/sell"} element={<Sell />} />
+
       <Route path={"/cart"} element={<Cart />} />
+
       <Route path={"/store/item/:id"} element={<ItemDetails />} />
+
       <Route path={"/*"} element={<Error />} />
     </Routes>
   );

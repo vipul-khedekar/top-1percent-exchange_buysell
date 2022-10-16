@@ -5,6 +5,7 @@ function Buy() {
   return (
     <div>
       <Navbar />
+
       <Store />
     </div>
   );
