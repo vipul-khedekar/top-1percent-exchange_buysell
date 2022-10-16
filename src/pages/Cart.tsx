@@ -1,24 +1,23 @@
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 
 import { AddItemState } from "../store/reducers/addItemReducer";
+
 import CartContent from "../components/CartContent";
-import { useDispatch } from "react-redux";
 
 function Cart() {
+  const dispatch = useDispatch();
+
   const quantity = useSelector<AddItemState, AddItemState[`quantity`]>(
     (state) => {
       return state.quantity;
     }
   );
-
   const cartItems = useSelector<AddItemState, AddItemState[`cartItems`]>(
     (state) => {
       return state.cartItems;
     }
   );
-
-  const dispatch = useDispatch();
 
   function removeItem(id: number, e: React.MouseEvent<Element, MouseEvent>) {
     e.preventDefault();

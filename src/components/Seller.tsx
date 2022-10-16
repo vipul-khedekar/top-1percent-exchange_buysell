@@ -1,19 +1,18 @@
 import { useState } from "react";
-import { useDispatch } from "react-redux";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
-import ListingCard from "./ListingCard";
 import { AddItemState } from "../store/reducers/addItemReducer";
 
+import ListingCard from "./ListingCard";
+
 function Seller() {
+  const dispatch = useDispatch();
+
   const sellerListing = useSelector<AddItemState, AddItemState[`listings`]>(
     (state) => {
       return state.listings;
     }
   );
-
-  const dispatch = useDispatch();
-
   const [title, setTitle] = useState(``);
   const [price, setPrice] = useState(``);
   const [seller, setSeller] = useState(``);

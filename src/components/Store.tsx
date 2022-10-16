@@ -1,26 +1,25 @@
 import { useState } from "react";
-import { useSelector } from "react-redux";
-import { useDispatch } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 
-import { StoreItems } from "../data/StoreItems";
 import { AddItemState } from "../store/reducers/addItemReducer";
-import Card from "./Card";
+
+import { StoreItems } from "../data/StoreItems";
 import Categories from "./Categories";
 
+import Card from "./Card";
+
 function Store() {
+  const dispatch = useDispatch();
+
   const quantity = useSelector<AddItemState, AddItemState[`quantity`]>(
     (state) => {
       return state.quantity;
     }
   );
-
   const cart = useSelector<AddItemState, AddItemState[`cartItems`]>((state) => {
     return state.cartItems;
   });
-
-  const dispatch = useDispatch();
-
   const [list, setList] = useState(StoreItems);
 
   function addItem(

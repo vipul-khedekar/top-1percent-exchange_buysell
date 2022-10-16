@@ -1,27 +1,25 @@
 import { useState } from "react";
-import { useDispatch } from "react-redux";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+
+import { AddItemState } from "../store/reducers/addItemReducer";
 
 import { StoreItems } from "../data/StoreItems";
-import { AddItemState } from "../store/reducers/addItemReducer";
 
 type ImageGridProps = {
   id: any;
 };
 
 function SellerDetails({ id }: ImageGridProps) {
+  const dispatch = useDispatch();
+
   const quantity = useSelector<AddItemState, AddItemState[`quantity`]>(
     (state) => {
       return state.quantity;
     }
   );
-
   const cart = useSelector<AddItemState, AddItemState[`cartItems`]>((state) => {
     return state.cartItems;
   });
-
-  const dispatch = useDispatch();
-
   const [message, setMessage] = useState(``);
 
   const product: any = StoreItems.find((item) => {

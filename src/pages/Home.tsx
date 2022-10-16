@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+
 import HomeBackground from "../images/home-background.jpg";
 
 function Home() {
