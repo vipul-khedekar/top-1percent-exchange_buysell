@@ -19,18 +19,19 @@ function Cart() {
     }
   );
 
-  function removeItem(id: number, e: React.MouseEvent<Element, MouseEvent>) {
+  const removeItem = (id: number, e: React.MouseEvent<Element, MouseEvent>) => {
     e.preventDefault();
 
     const filteredList = cartItems.filter((item) => {
       return item.id !== id;
     });
+
     dispatch({
       type: `REMOVE_ITEM`,
       payload: quantity - 1,
       item: filteredList,
     });
-  }
+  };
 
   return (
     <div className="flex flex-col justify-center items-center flex-wrap gap-8">

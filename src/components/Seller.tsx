@@ -19,7 +19,7 @@ function Seller() {
   const [imageLink, setImageLink] = useState(``);
   const [myListing, setMyListing] = useState(sellerListing);
 
-  function uploadMyListing(e: React.MouseEvent<Element, MouseEvent>) {
+  const uploadMyListing = (e: React.MouseEvent<Element, MouseEvent>) => {
     e.preventDefault();
 
     if (
@@ -45,8 +45,8 @@ function Seller() {
         },
       };
       myListing.push(item);
-      setMyListing(myListing);
 
+      setMyListing(myListing);
       dispatch({ type: `ADD_LISTING`, listItems: myListing });
 
       setTitle(``);
@@ -62,16 +62,16 @@ function Seller() {
 • Title, Price and Owner name should not exceed more than 20 characters.`
       );
     }
-  }
+  };
 
-  function deleteAListing(id: number) {
+  const deleteAListing = (id: number) => {
     const list = myListing.filter((item) => {
       return item.id !== id;
     });
-    setMyListing(list);
 
+    setMyListing(list);
     dispatch({ type: `ADD_LISTING`, listItems: list });
-  }
+  };
 
   return (
     <main className="flex flex-col justify-center items-center gap-6 mt-20">

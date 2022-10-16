@@ -22,13 +22,13 @@ function Store() {
   });
   const [list, setList] = useState(StoreItems);
 
-  function addItem(
+  const addItem = (
     id: number,
     title: string,
     price: string,
     image: string,
     e: React.MouseEvent<Element, MouseEvent>
-  ) {
+  ) => {
     e.preventDefault();
 
     if (cart.length > 0) {
@@ -42,18 +42,19 @@ function Store() {
       payload: quantity + 1,
       item: [...cart, { id: id, title: title, price: price, image: image }],
     });
-  }
+  };
 
-  function categorize(category: string) {
+  const categorize = (category: string) => {
     if (category === `all`) {
       setList(StoreItems);
     } else {
       const filteredList = StoreItems.filter((item) => {
         return item.category === category;
       });
+
       setList(filteredList);
     }
-  }
+  };
 
   return (
     <div className="flex flex-col justify-center items-center gap-8 mt-24">

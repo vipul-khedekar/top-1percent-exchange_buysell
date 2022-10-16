@@ -26,7 +26,7 @@ function SellerDetails({ id }: ImageGridProps) {
     return item.id === Number(id);
   });
 
-  function addToCart() {
+  const addToCart = () => {
     if (cart.length > 0) {
       for (let i = 0; i < cart.length; i++) {
         if (cart[i].id === product.id) return;
@@ -46,29 +46,27 @@ function SellerDetails({ id }: ImageGridProps) {
         },
       ],
     });
-  }
+  };
 
-  function showTalkMessage() {
+  const showTalkMessage = () => {
     setTimeout(() => {
       setMessage(`Seller is notified.`);
-
       setTimeout(() => {
         setMessage(``);
       }, 2000);
     }, 400);
-  }
+  };
 
-  function showBuyMessage() {
+  const showBuyMessage = () => {
     setTimeout(() => {
       setMessage(`Item added to cart.`);
-
       setTimeout(() => {
         setMessage(``);
       }, 2000);
     }, 400);
 
     addToCart();
-  }
+  };
 
   return (
     <article className="w-[340px] flex flex-col justify-between items-center gap-4 p-4 border-[2.5px] border-gold rounded-md text-sm">
