@@ -96,10 +96,10 @@ function Seller() {
             onChange={(e) => setTitle(e.target.value)}
             className="h-8 w-96 bg-black p-4 rounded-sm text-semiDarkWhite"
             value={title}
-            id="title"
-            type="text"
             placeholder="What do you want to call this item?"
             pattern="[a-zA-Z ]{1,20}"
+            id="title"
+            type="text"
             required
           />
         </div>
@@ -113,10 +113,10 @@ function Seller() {
             onChange={(e) => setPrice(e.target.value)}
             className="h-8 w-96 bg-black p-4 rounded-sm text-semiDarkWhite appearance-none"
             value={price}
-            id="price"
-            type="number"
             placeholder="How much do you think is it's worth?"
             pattern="[0-9]{1,}"
+            id="price"
+            type="number"
             required
           />
         </div>
@@ -130,10 +130,10 @@ function Seller() {
             onChange={(e) => setSeller(e.target.value)}
             className="h-8 w-96 bg-black p-4 rounded-sm text-semiDarkWhite"
             value={seller}
-            id="owner"
-            type="text"
             placeholder="What is your name?"
             pattern="[a-zA-Z ]{1,15}"
+            id="owner"
+            type="text"
             required
           />
         </div>
@@ -147,9 +147,9 @@ function Seller() {
             onChange={(e) => setImageLink(e.target.value)}
             className="h-8 w-96 bg-black p-4 rounded-sm text-semiDarkWhite"
             value={imageLink}
+            placeholder="Paste an image link"
             id="imageLink"
             type="text"
-            placeholder="Paste an image link"
           />
         </div>
 
