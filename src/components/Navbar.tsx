@@ -44,7 +44,7 @@ function Navbar() {
           <IoCartOutline />
 
           <div className="h-4 w-6 bg-gold flex justify-center items-center rounded-full absolute bottom-5 left-7 text-black font-ubuntu text-sm">
-            <p>{quantity}</p>
+            <p>{quantity && quantity}</p>
           </div>
         </div>
       </NavLink>

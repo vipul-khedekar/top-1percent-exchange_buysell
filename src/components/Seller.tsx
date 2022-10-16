@@ -162,7 +162,7 @@ function Seller() {
         </button>
       </form>
 
-      {myListing.length > 0 && (
+      {myListing?.length > 0 && (
         <section className="flex flex-col justify-center items-center gap-2">
           <h3 className="text-semiDarkWhite font-ptserif text-lg">
             My Listings

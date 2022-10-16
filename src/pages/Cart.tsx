@@ -35,17 +35,22 @@ function Cart() {
 
   return (
     <div className="flex flex-col justify-center items-center flex-wrap gap-8">
-      {cartItems.length > 0 ? (
+      {cartItems?.length > 0 ? (
         <div className="flex flex-col justify-center items-center gap-8 text-2xl">
           <h3 className="font-ptserif">Cart Items</h3>
 
-          {cartItems.map((item) => {
-            return (
-              <Link to={`/store/item/${item.id}`}>
-                <CartContent key={item.id} {...item} removeItem={removeItem} />
-              </Link>
-            );
-          })}
+          {cartItems &&
+            cartItems.map((item) => {
+              return (
+                <Link to={`/store/item/${item.id}`}>
+                  <CartContent
+                    key={item.id}
+                    {...item}
+                    removeItem={removeItem}
+                  />
+                </Link>
+              );
+            })}
 
           <Link
             className="bg-gradient-to-br from-darkGold to-gold py-1 px-4 rounded-lg text-lg ease-in duration-200 hover:scale-110"
