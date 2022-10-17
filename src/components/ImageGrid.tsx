@@ -15,6 +15,7 @@ function ImageGrid({ id }: ImageGridProps) {
       <img
         className="h-[335px] w-[335px] rounded-lg object-cover scale-100 ease-in duration-200 hover:scale-105"
         src={product.images.main || DefaultImage}
+        loading="lazy"
         alt={product && product.item.title}
       />
 
@@ -25,6 +26,7 @@ function ImageGrid({ id }: ImageGridProps) {
               <img
                 className="h-[160px] w-[160px] rounded-lg object-cover scale-100 ease-in duration-200 hover:scale-110"
                 src={image}
+                loading="lazy"
                 alt="secondary-image"
               />
             );

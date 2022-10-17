@@ -20,6 +20,7 @@ function CartContent({
       <img
         className="h-[8rem] w-[10rem] rounded-md object-cover"
         src={image}
+        loading="lazy"
         alt={title}
       />
 

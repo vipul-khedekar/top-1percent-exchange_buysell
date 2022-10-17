@@ -31,6 +31,7 @@ function Card({ id, owner, item, images, addItem }: CardProps) {
       <img
         className="h-[14rem] w-[95%] mt-2 rounded-lg object-cover scale-100 ease-in duration-200 cursor-pointer hover:scale-105 hover:shadow-black hover:shadow-md"
         src={main}
+        loading="lazy"
         alt={title}
       />
 

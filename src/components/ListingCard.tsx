@@ -35,6 +35,7 @@ function ListingCard({
       <img
         className="h-24 w-28 rounded-md object-cover scale-100 ease-in duration-200 hover:scale-125"
         src={!main.startsWith(`https://`) ? DefaultImage : main}
+        loading="lazy"
         alt={title}
       />
 
