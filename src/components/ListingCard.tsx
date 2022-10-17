@@ -1,6 +1,6 @@
 import { AiTwotoneDelete } from "react-icons/ai";
 
-import DefaultImage from "../images/default-image-display.jpg";
+import DefaultImage from "../images/default-image-display.webp";
 
 type ListingCardProps = {
   id: number;

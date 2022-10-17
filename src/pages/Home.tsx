@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import HomeBackground from "../images/home-background.jpg";
+import HomeBackground from "../images/home-background.webp";
 
 function Home() {
   return (

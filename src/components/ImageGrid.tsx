@@ -1,5 +1,5 @@
 import { StoreItems } from "../data/StoreItems";
-import DefaultImage from "../images/default-image-display.jpg";
+import DefaultImage from "../images/default-image-display.webp";
 
 type ImageGridProps = {
   id: any;
