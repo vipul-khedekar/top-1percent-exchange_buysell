@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { AddItemState } from "../store/reducers/addItemReducer";
 
 import CartContent from "../components/CartContent";
+import TotalCartPrice from "../components/TotalCartPrice";
 
 function Cart() {
   const dispatch = useDispatch();
@@ -18,6 +19,11 @@ function Cart() {
       return state.cartItems;
     }
   );
+
+  const totalPrice = cartItems.reduce((sum, item) => {
+    return sum + item.price;
+  }, 0);
+  console.log(totalPrice);
 
   const removeItem = (id: number, e: React.MouseEvent<Element, MouseEvent>) => {
     e.preventDefault();
@@ -51,6 +57,8 @@ function Cart() {
                 </Link>
               );
             })}
+
+          {totalPrice && <TotalCartPrice totalPrice={totalPrice} />}
 
           <Link
             className="bg-gradient-to-br from-darkGold to-gold py-1 px-4 rounded-lg text-lg ease-in duration-200 hover:scale-110"
