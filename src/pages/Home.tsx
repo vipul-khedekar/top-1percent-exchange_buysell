@@ -40,16 +40,16 @@ function Home() {
           </p>
         </div>
 
-        <div className="flex gap-6">
+        <div className="flex gap-8">
           <Link
-            className="bg-gradient-to-tr from-darkGold to-gold px-4 py-2 rounded-md text-semiLightBlack font-bold scale-100 ease-in duration-150 hover:scale-110"
+            className="bg-gradient-to-tr from-darkGold to-gold px-4 py-2 rounded-md text-semiLightBlack font-bold scale-100 ease-in duration-150 animate-bounce hover:scale-110"
             to={"/store/buy"}
           >
             I'm here to buy
           </Link>
 
           <Link
-            className="bg-gradient-to-tr from-darkGold to-gold px-4 py-2 rounded-md text-semiLightBlack font-bold scale-100 ease-in duration-150 hover:scale-110"
+            className="bg-gradient-to-tr from-darkGold to-gold px-4 py-2 rounded-md text-semiLightBlack font-bold scale-100 ease-in duration-150 animate-bounce hover:scale-110"
             to={"/store/sell"}
           >
             I'm here to sell
