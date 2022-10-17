@@ -3,7 +3,7 @@ import { MdDeleteForever } from "react-icons/md";
 type CartContentProps = {
   id: number;
   title: string;
-  price: string;
+  price: number;
   image: string;
   removeItem(id: number, e: React.MouseEvent<Element, MouseEvent>): void;
 };
@@ -26,7 +26,7 @@ function CartContent({
 
       <div className="flex flex-col justify-center items-center gap-4">
         <p className="text-xl text-center">{title}</p>
-        <p className="text-lg">₹{price}</p>
+        <p className="text-lg">₹{price.toLocaleString(`en`)}</p>
       </div>
 
       <button

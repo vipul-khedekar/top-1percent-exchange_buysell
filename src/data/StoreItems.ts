@@ -8,7 +8,7 @@ export const StoreItems = [
     },
     item: {
       title: `Porsche 912`,
-      price: `4,701,093`,
+      price: 4701093,
       year: 1966,
       place: `Glendale, United States`,
       about: `Vintage Porsche.`,
@@ -32,7 +32,7 @@ export const StoreItems = [
     },
     item: {
       title: `DUCATI Multistrada ABS`,
-      price: `753,290`,
+      price: 753290,
       year: 2012,
       place: ` Buffalo, NY, United States`,
       about: `We have a full line of Ducati Motorcycles, Parts, Accessories & Apparels (Ducati Performance). Great selection of mildly used Ducati Motorcycles in showroom as well.`,
@@ -56,7 +56,7 @@ export const StoreItems = [
     },
     item: {
       title: `Ford Thunderbird`,
-      price: `3,185,129`,
+      price: 3185129,
       year: 1956,
       place: `Brescia, Italy`,
       about: `A nicely restored '56 bird with some Ford Exec history, plenty of options and a nice looking example which has won many shows including a few best of show badges. A convertible, hardtop and nice history come with this car which is raring to take flight and make more history and memories.`,
@@ -80,7 +80,7 @@ export const StoreItems = [
     },
     item: {
       title: `Hermes Kelly II Sellier 28 in Veau Epsom Leather`,
-      price: `1,115,513`,
+      price: 1115513,
       year: 2008,
       place: `Melbourne, Victoria, Australia`,
       about: `Sophisticated, chic, and dateless the Kelly II will compliment your outfit on any occasion. This 28 cm Hermes Kelly II Sellier in beautiful Veau Epsom leather, an embossed leather that is recognised for its durability. The colour is Noir 89 (Black) and it is complemented beautifully with the application of gold hardware.`,
@@ -104,7 +104,7 @@ export const StoreItems = [
     },
     item: {
       title: `Jesus On The Cross Pendant`,
-      price: `14,664`,
+      price: 14664,
       year: 1966,
       place: `Secret Place, North Korea`,
       about: `This Jesus on the Cross Pendant is crafted in 14ct Yellow Gold and is accentuated with the application of 133 round brilliant cut diamonds pave set with a total weight of 0.44ct it is SI1 in clarity and E/F in colour. Beautifully crafted by hand, this pendant weighs a total of 17.40 grams.`,
@@ -128,7 +128,7 @@ export const StoreItems = [
     },
     item: {
       title: `Alpha Spritz 116`,
-      price: `2,944,924`,
+      price: 2944924,
       year: 2013,
       place: `Turkey`,
       about: `Alpha worked with Italian superyacht designer Giorgia Cassetta and naval architect Laurent Giles to create a platform for family fun; elegant and crafted with care. According to Cassetta, the yacht has the feel of a luxury villa combined with great functionality for long-range cruising and comfort.`,
@@ -152,7 +152,7 @@ export const StoreItems = [
     },
     item: {
       title: ` Alpha Alfresco 110`,
-      price: `3,320,893`,
+      price: 3320893,
       year: 2014,
       place: `Turkey`,
       about: `Excellent opportunity to own an Alpha Custom Yacht. Alpha Custom Yachts is a company that helps all the ocean lovers sail away with a smile over and over again. With their obsession to quality and detail, you get the feeling you are standing at water level with the big windows all throughout the vessel.`,
@@ -176,7 +176,7 @@ export const StoreItems = [
     },
     item: {
       title: `Triumph "Green Legend" Steve McQueen Edition`,
-      price: `1,987,712`,
+      price: 1987712,
       year: 2015,
       place: `Chauvigny, France`,
       about: `It is based on Triumph Bonneville as the workshop decided to Manufacturing, Design, Achieve its last custom.`,
@@ -200,7 +200,7 @@ export const StoreItems = [
     },
     item: {
       title: `Richard Mille RM 029`,
-      price: `20,098,875`,
+      price: 20098875,
       year: 2018,
       place: `Hong Kong`,
       about: `2018 Paper, Mint Condition Watch with Box and Paper Full Set!!`,
@@ -224,7 +224,7 @@ export const StoreItems = [
     },
     item: {
       title: `Pilatus PC12`,
-      price: `306,766,286`,
+      price: 306766286,
       year: 2011,
       place: `France`,
       about: `Executive Platinum 6+2-Seat interior. 8-Seat Oxygen System and 2 Standard Seats. Executive 6-Seat interior. Platinum Upgrade 6-Seat.`,
@@ -248,7 +248,7 @@ export const StoreItems = [
     },
     item: {
       title: `Tennis Chain`,
-      price: `69,420`,
+      price: 69420,
       year: 2021,
       place: ` Melbourne, Victoria, Australia `,
       about: `This stunning Tennis Chain is complete in 14k Yellow Gold featuring 62 round brilliant diamonds, 16.19ct in combined weight. The Round Brilliant diamonds are VS2 clarity and H colour, completed in a 4 claw setting. The necklace is a total length of 57cm with a tongue and groove safety clasp. `,
@@ -272,7 +272,7 @@ export const StoreItems = [
     },
     item: {
       title: `Lamborghini Huracan`,
-      price: `20,393,982`,
+      price: 20393982,
       year: 2017,
       place: `Bellevue, WA, United States`,
       about: `This build starts with the most desirable white exterior on black/red interior configuration with front axle lift system, upgraded factory wheels, carbon ceramic disk brakes, full alcantara interior, carbon fiber, and additional factory options.`,
@@ -296,7 +296,7 @@ export const StoreItems = [
     },
     item: {
       title: `Aston Martin Vantage`,
-      price: `10,994,981`,
+      price: 10994981,
       year: 2020,
       place: `Beverly Hills, CA, United States`,
       about: `O'Gara Beverly Hills is pleased to present for sale this stunning 2020 Aston Martin Vantage as part of our hand-selected pre-owned lineup. This gorgeous example is finished in the Stratus White exterior paint and Copper Tan. Other dealer added factory options include: RWD ZF 8-Speed Automatic V8.`,
@@ -320,7 +320,7 @@ export const StoreItems = [
     },
     item: {
       title: `Eurocopter AS355F2`,
-      price: `62,946,848`,
+      price: 62946848,
       year: 1991,
       place: `Austria`,
       about: `The aircraft is operating, why the condition and component times will be subject to changes depending upon such operations. Verification of the condition of the aircraft and its component times shall be the responsibility of the purchaser.`,
@@ -344,7 +344,7 @@ export const StoreItems = [
     },
     item: {
       title: `TurboProp`,
-      price: `71,805,101`,
+      price: 71805101,
       year: 2013,
       place: `Neustadt an der Aisch, Bavaria, Germany`,
       about: `After the first 500 we had listed sold within days for the full asking price, we are pleased to be able to bring to market a second aircraft, and this time with no fewer then 450 hours total time from new. The aircraft presents like new and is in outstanding condition. With a Engine TBO of 3500 hours you have over 3000 hours left to fly before overhaul.`,
@@ -368,7 +368,7 @@ export const StoreItems = [
     },
     item: {
       title: `Classic Flugel Matt Black and Red Piano`,
-      price: `4,427,057`,
+      price: 4427057,
       year: 1986,
       place: `United Kingdom`,
       about: `The black and red matt finish flugel is a show stopping piano! With a vibrant red interior and integrated self play it really makes a statement in the home and provides hours of entertainment. Complete with matching stool. `,

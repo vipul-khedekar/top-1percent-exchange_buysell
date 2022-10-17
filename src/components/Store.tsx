@@ -25,7 +25,7 @@ function Store() {
   const addItem = (
     id: number,
     title: string,
-    price: string,
+    price: number,
     image: string,
     e: React.MouseEvent<Element, MouseEvent>
   ) => {

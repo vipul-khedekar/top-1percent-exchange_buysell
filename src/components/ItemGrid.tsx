@@ -18,7 +18,7 @@ function ItemDetails({ id }: ImageGridProps) {
       </div>
 
       <p className="text-darkGold hover:text-gold text-lg">
-        ₹{product && product.item.price}
+        ₹{product && product.item.price.toLocaleString(`en`)}
       </p>
 
       <p className="mt-6 font-light">{product && product.item.place}</p>

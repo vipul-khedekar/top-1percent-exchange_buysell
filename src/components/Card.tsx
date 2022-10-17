@@ -7,7 +7,7 @@ type CardProps = {
   };
   item: {
     title: string;
-    price: string;
+    price: number;
   };
   images: {
     main: string;
@@ -15,7 +15,7 @@ type CardProps = {
   addItem(
     id: number,
     title: string,
-    price: string,
+    price: number,
     main: string,
     e: React.MouseEvent<Element, MouseEvent>
   ): void;
@@ -38,7 +38,7 @@ function Card({ id, owner, item, images, addItem }: CardProps) {
       <div className="flex flex-col justify-center items-center font-bold text-center">
         <h3 className="text-semiDarkWhite text-lg">{title}</h3>
 
-        <h3 className="text-gold font-light">₹{price}</h3>
+        <h3 className="text-gold font-light">₹{price.toLocaleString(`en`)}</h3>
       </div>
 
       <div className="flex justify-between items-center gap-32 mb-5 text-semiLightBlack">

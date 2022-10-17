@@ -10,7 +10,7 @@ type ListingCardProps = {
   };
   item: {
     title: string;
-    price: string;
+    price: number;
   };
   images: {
     main: string;
@@ -42,7 +42,9 @@ function ListingCard({
       <div className="flex flex-col justify-center items-center">
         <p className="text-semiDarkWhite text-center">{title}</p>
 
-        <p className="text-semiDarkWhite text-sm text-center">₹{price}</p>
+        <p className="text-semiDarkWhite text-sm text-center">
+          ₹{price.toLocaleString(`en`)}
+        </p>
 
         <p className="text-semiDarkWhite text-xs text-center">{name}</p>
       </div>
