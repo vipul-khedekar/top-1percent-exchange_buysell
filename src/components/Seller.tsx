@@ -100,6 +100,7 @@ function Seller() {
             pattern="[a-zA-Z ]{1,20}"
             id="title"
             type="text"
+            autoComplete="off"
             required
           />
         </section>
@@ -117,6 +118,7 @@ function Seller() {
             pattern="[0-9]{1,}"
             id="price"
             type="number"
+            autoComplete="off"
             required
           />
         </section>
@@ -134,6 +136,7 @@ function Seller() {
             pattern="[a-zA-Z ]{1,15}"
             id="owner"
             type="text"
+            autoComplete="off"
             required
           />
         </section>
@@ -149,6 +152,7 @@ function Seller() {
             value={imageLink}
             placeholder="Paste an image link"
             id="imageLink"
+            autoComplete="off"
             type="text"
           />
         </section>
