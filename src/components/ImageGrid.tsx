@@ -11,7 +11,7 @@ function ImageGrid({ id }: ImageGridProps) {
   });
 
   return (
-    <article className="h-[350px] w-[800px] flex justify-center items-center px-8">
+    <figure className="h-[350px] w-[800px] flex justify-center items-center px-8">
       <img
         className="h-[335px] w-[335px] rounded-lg object-cover scale-100 ease-in duration-200 hover:scale-105"
         src={product.images.main || DefaultImage}
@@ -19,7 +19,7 @@ function ImageGrid({ id }: ImageGridProps) {
         alt={product && product.item.title}
       />
 
-      <div className="flex flex-row flex-wrap justify-center items-center gap-4">
+      <figure className="flex flex-row flex-wrap justify-center items-center gap-4">
         {product &&
           product.images.secondary.map((image: string) => {
             return (
@@ -31,8 +31,8 @@ function ImageGrid({ id }: ImageGridProps) {
               />
             );
           })}
-      </div>
-    </article>
+      </figure>
+    </figure>
   );
 }
 

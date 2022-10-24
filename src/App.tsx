@@ -2,9 +2,9 @@ import Pages from "./pages/Pages";
 
 function App() {
   return (
-    <div className="m-5">
+    <article className="m-5">
       <Pages />
-    </div>
+    </article>
   );
 }
 

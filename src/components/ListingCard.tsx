@@ -31,7 +31,7 @@ function ListingCard({
   const { main } = images;
 
   return (
-    <article className="h-28 w-96 flex flex-wrap justify-between items-center gap-6 px-2 py-1 border-[2px] border-darkGold rounded-md relative hover:border-gold hover:shadow-black hover:shadow-md">
+    <section className="h-28 w-96 flex flex-wrap justify-between items-center gap-6 px-2 py-1 border-[2px] border-darkGold rounded-md relative hover:border-gold hover:shadow-black hover:shadow-md">
       <img
         className="h-24 w-28 rounded-md object-cover scale-100 ease-in duration-200 hover:scale-125"
         src={!main.startsWith(`https://`) ? DefaultImage : main}
@@ -39,7 +39,7 @@ function ListingCard({
         alt={title}
       />
 
-      <div className="flex flex-col justify-center items-center">
+      <section className="flex flex-col justify-center items-center">
         <p className="text-semiDarkWhite text-center">{title}</p>
 
         <p className="text-semiDarkWhite text-sm text-center">
@@ -47,7 +47,7 @@ function ListingCard({
         </p>
 
         <p className="text-semiDarkWhite text-xs text-center">{name}</p>
-      </div>
+      </section>
 
       <button
         onClick={() => deleteAListing(id)}
@@ -56,7 +56,7 @@ function ListingCard({
       >
         <AiTwotoneDelete className="text-semiLightBlack text-lg" />
       </button>
-    </article>
+    </section>
   );
 }
 

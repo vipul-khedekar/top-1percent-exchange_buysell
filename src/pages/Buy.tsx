@@ -3,11 +3,11 @@ import Store from "../components/Store";
 
 function Buy() {
   return (
-    <div>
+    <article>
       <Navbar />
 
       <Store />
-    </div>
+    </article>
   );
 }
 

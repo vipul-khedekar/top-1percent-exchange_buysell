@@ -57,7 +57,7 @@ function Store() {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center gap-8 mt-24">
+    <article className="flex flex-col justify-center items-center gap-8 mt-24">
       <Categories categorize={categorize} />
 
       <main className="h-full w-full flex flex-wrap justify-center items-center gap-10">
@@ -70,7 +70,7 @@ function Store() {
             );
           })}
       </main>
-    </div>
+    </article>
   );
 }
 

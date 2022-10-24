@@ -69,14 +69,14 @@ function SellerDetails({ id }: ImageGridProps) {
   };
 
   return (
-    <article className="w-[340px] flex flex-col justify-between items-center gap-4 p-4 border-[2.5px] border-gold rounded-md text-sm">
+    <section className="w-[340px] flex flex-col justify-between items-center gap-4 p-4 border-[2.5px] border-gold rounded-md text-sm">
       <p className="font-raleway">Seller: {product && product.owner.name}</p>
 
       <p className="font-raleway">{product && product.owner.country}</p>
 
       <div className="h-4 my-1 font-raleway italic">{message}</div>
 
-      <div className="flex gap-4">
+      <section className="flex gap-4">
         <button
           onClick={() => showTalkMessage()}
           className="w-[140px] bg-gradient-to-br from-darkGold to-gold py-2 px-3 rounded-md"
@@ -92,8 +92,8 @@ function SellerDetails({ id }: ImageGridProps) {
         >
           Take my money
         </button>
-      </div>
-    </article>
+      </section>
+    </section>
   );
 }
 

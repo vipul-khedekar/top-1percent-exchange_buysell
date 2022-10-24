@@ -4,15 +4,15 @@ import HomeBackground from "../images/home-background.webp";
 
 function Home() {
   return (
-    <div className="-m-5 relative">
+    <article className="-m-5 relative">
       <img
         className="h-[100vh] w-[100vw] object-cover relative z-10 brightness-[80%]"
         src={HomeBackground}
         alt="home-background"
       />
 
-      <div className="h-[500px] md:w-[510px] lg:w-auto flex flex-col justify-center items-start gap-8 ml-12 absolute z-10 top-40">
-        <div className="font-ptserif text-[5.5rem] font-bold leading-[1]">
+      <article className="h-[500px] md:w-[510px] lg:w-auto flex flex-col justify-center items-start gap-8 ml-12 absolute z-10 top-40">
+        <header className="font-ptserif text-[5.5rem] font-bold leading-[1]">
           <p>The</p>
 
           <p className="-mt-7">
@@ -25,9 +25,9 @@ function Home() {
             </span>{" "}
             Club
           </p>
-        </div>
+        </header>
 
-        <div>
+        <aside>
           <p className="text-sm italic">‣ Buy or sell used luxury products.</p>
 
           <p className="text-sm italic">
@@ -38,9 +38,9 @@ function Home() {
             ‣ Browse through the catalogue of all available items put on sell by
             people like you.
           </p>
-        </div>
+        </aside>
 
-        <div className="flex gap-8">
+        <nav className="flex gap-8">
           <Link
             className="bg-gradient-to-tr from-darkGold to-gold px-4 py-2 rounded-md text-semiLightBlack font-bold scale-100 ease-in duration-150 animate-bounce hover:scale-110"
             to={"/store/buy"}
@@ -54,9 +54,9 @@ function Home() {
           >
             I'm here to sell
           </Link>
-        </div>
-      </div>
-    </div>
+        </nav>
+      </article>
+    </article>
   );
 }
 

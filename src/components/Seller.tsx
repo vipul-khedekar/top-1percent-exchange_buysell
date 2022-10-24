@@ -87,7 +87,7 @@ function Seller() {
         className="flex flex-col justify-center items-center gap-3 p-4 border-b-2 border-black"
         action="POST"
       >
-        <div>
+        <section>
           <label className="mr-14 text-semiDarkWhite" htmlFor="title">
             Title:
           </label>
@@ -102,9 +102,9 @@ function Seller() {
             type="text"
             required
           />
-        </div>
+        </section>
 
-        <div>
+        <section>
           <label className="mr-14 text-semiDarkWhite" htmlFor="price">
             Price:
           </label>
@@ -119,9 +119,9 @@ function Seller() {
             type="number"
             required
           />
-        </div>
+        </section>
 
-        <div>
+        <section>
           <label className="mr-12 text-semiDarkWhite" htmlFor="owner">
             Seller:
           </label>
@@ -136,9 +136,9 @@ function Seller() {
             type="text"
             required
           />
-        </div>
+        </section>
 
-        <div>
+        <section>
           <label className="mr-2 text-semiDarkWhite" htmlFor="imageLink">
             Image Link:
           </label>
@@ -151,7 +151,7 @@ function Seller() {
             id="imageLink"
             type="text"
           />
-        </div>
+        </section>
 
         <button
           onClick={(e) => uploadMyListing(e)}
@@ -163,12 +163,12 @@ function Seller() {
       </form>
 
       {myListing?.length > 0 && (
-        <section className="flex flex-col justify-center items-center gap-2">
+        <article className="flex flex-col justify-center items-center gap-2">
           <h3 className="text-semiDarkWhite font-ptserif text-lg">
             My Listings
           </h3>
 
-          <div className="w-full flex flex-wrap justify-center items-center gap-4 p-2">
+          <section className="w-full flex flex-wrap justify-center items-center gap-4 p-2">
             {sellerListing &&
               sellerListing.map((item) => {
                 return (
@@ -179,8 +179,8 @@ function Seller() {
                   />
                 );
               })}
-          </div>
-        </section>
+          </section>
+        </article>
       )}
     </main>
   );

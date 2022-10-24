@@ -40,60 +40,66 @@ function Cart() {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center flex-wrap gap-8">
+    <article>
       {cartItems?.length > 0 ? (
-        <div className="flex flex-col justify-center items-center gap-8 text-2xl">
-          <h3 className="font-ptserif">Cart Items</h3>
+        <article className="flex flex-col justify-center items-center gap-8">
+          <section className="flex flex-col justify-center items-center flex-wrap gap-2  text-2xl">
+            <h3 className="font-ptserif">Cart Items</h3>
 
-          {cartItems &&
-            cartItems.map((item) => {
-              return (
-                <Link to={`/store/item/${item.id}`}>
-                  <CartContent
-                    key={item.id}
-                    {...item}
-                    removeItem={removeItem}
-                  />
-                </Link>
-              );
-            })}
+            {cartItems &&
+              cartItems.map((item) => {
+                return (
+                  <Link to={`/store/item/${item.id}`}>
+                    <CartContent
+                      key={item.id}
+                      {...item}
+                      removeItem={removeItem}
+                    />
+                  </Link>
+                );
+              })}
 
-          {totalPrice && <TotalCartPrice totalPrice={totalPrice} />}
+            {totalPrice && <TotalCartPrice totalPrice={totalPrice} />}
+          </section>
 
-          <Link
-            className="bg-gradient-to-br from-darkGold to-gold py-1 px-4 rounded-lg text-lg ease-in duration-200 hover:scale-110"
-            to="/store/buy"
-          >
-            Return to Store
-          </Link>
+          <nav className="flex flex-col gap-6">
+            <Link
+              className="bg-gradient-to-br from-darkGold to-gold py-1 px-4 rounded-lg text-lg ease-in duration-200 hover:scale-110"
+              to="/store/buy"
+            >
+              Return to Store
+            </Link>
 
-          <Link
-            className="bg-gradient-to-br from-darkGold to-gold py-1 px-4 rounded-lg text-lg ease-in duration-200 hover:scale-110"
-            to="/"
-          >
-            Return to Home
-          </Link>
-        </div>
+            <Link
+              className="bg-gradient-to-br from-darkGold to-gold py-1 px-4 rounded-lg text-lg ease-in duration-200 hover:scale-110"
+              to="/"
+            >
+              Return to Home
+            </Link>
+          </nav>
+        </article>
       ) : (
-        <>
+        <article className="flex flex-col justify-center items-center flex-wrap gap-8">
           <h3 className="text-white font-ptserif">Cart is empty</h3>
 
-          <Link
-            className="bg-gradient-to-br from-darkGold to-gold py-1 px-4 rounded-lg ease-in duration-200 hover:scale-110"
-            to="/store/buy"
-          >
-            Return to Store
-          </Link>
+          <nav className="flex flex-col gap-6">
+            <Link
+              className="bg-gradient-to-br from-darkGold to-gold py-1 px-4 rounded-lg ease-in duration-200 hover:scale-110"
+              to="/store/buy"
+            >
+              Return to Store
+            </Link>
 
-          <Link
-            className="bg-gradient-to-br from-darkGold to-gold py-1 px-4 rounded-lg ease-in duration-200 hover:scale-110"
-            to="/"
-          >
-            Return to Home
-          </Link>
-        </>
+            <Link
+              className="bg-gradient-to-br from-darkGold to-gold py-1 px-4 rounded-lg ease-in duration-200 hover:scale-110"
+              to="/"
+            >
+              Return to Home
+            </Link>
+          </nav>
+        </article>
       )}
-    </div>
+    </article>
   );
 }
 

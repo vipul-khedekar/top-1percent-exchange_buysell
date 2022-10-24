@@ -3,11 +3,11 @@ import Seller from "../components/Seller";
 
 function Sell() {
   return (
-    <div>
+    <article>
       <Navbar />
 
       <Seller />
-    </div>
+    </article>
   );
 }
 

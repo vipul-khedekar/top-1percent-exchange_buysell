@@ -10,7 +10,7 @@ function ItemDetails({ id }: ImageGridProps) {
   });
 
   return (
-    <article className="h-[330px] w-[400px] p-4 border-[2.5px] border-gold rounded-md overflow-y-scroll">
+    <section className="h-[330px] w-[400px] p-4 border-[2.5px] border-gold rounded-md overflow-y-scroll">
       <div className="flex justify-between items-center gap-28 text-2xl">
         <p>{product && product.item.title}</p>
 
@@ -24,7 +24,7 @@ function ItemDetails({ id }: ImageGridProps) {
       <p className="mt-6 font-light">{product && product.item.place}</p>
 
       <p className="italic">{product && product.item.about}</p>
-    </article>
+    </section>
   );
 }
 

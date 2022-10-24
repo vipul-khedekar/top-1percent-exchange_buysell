@@ -16,7 +16,7 @@ function CartContent({
   removeItem,
 }: CartContentProps) {
   return (
-    <div className="h-[10rem] w-[46rem] flex justify-between items-center gap-4 p-4 border-[2px] border-gold rounded-md scale-100 ease-in duration-200 hover:scale-105">
+    <section className="h-[10rem] w-[46rem] flex justify-between items-center gap-4 p-4 border-[2px] border-gold rounded-md scale-100 ease-in duration-200 hover:scale-105">
       <img
         className="h-[8rem] w-[10rem] rounded-md object-cover"
         src={image}
@@ -24,10 +24,11 @@ function CartContent({
         alt={title}
       />
 
-      <div className="flex flex-col justify-center items-center gap-4">
+      <section className="flex flex-col justify-center items-center gap-4">
         <p className="text-xl text-center">{title}</p>
+
         <p className="text-lg">₹{price.toLocaleString(`en`)}</p>
-      </div>
+      </section>
 
       <button
         onClick={(e) => removeItem(id, e)}
@@ -36,7 +37,7 @@ function CartContent({
       >
         <MdDeleteForever className="text-semiLightBlack text-2xl" />
       </button>
-    </div>
+    </section>
   );
 }
 

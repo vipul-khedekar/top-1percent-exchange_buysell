@@ -9,19 +9,19 @@ function ItemDetails() {
   const params = useParams();
 
   return (
-    <div className="overflow-x-hidden">
+    <article className="overflow-x-hidden">
       <Navbar />
 
       <section className="flex flex-col justify-start items-center gap-2 mt-14">
         <ImageGrid id={params.id} />
 
-        <div className="flex justify-between items-start gap-4 px-8">
+        <section className="flex justify-between items-start gap-4 px-8">
           <ItemGrid id={params.id} />
 
           <SellerDetails id={params.id} />
-        </div>
+        </section>
       </section>
-    </div>
+    </article>
   );
 }
 
