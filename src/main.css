@@ -1,47 +1,51 @@
 :root {
-    --darkGold: #8e793e;
-    --gold: #ad974f;
-    --black: #000000;
-    --semiLightBlack: #231f20;
-    --semiDarkWhite: #eaeaea;
-    --white: #ffffff;
+  --darkGold: #8e793e;
+  --gold: #ad974f;
+  --black: #000000;
+  --semiLightBlack: #231f20;
+  --semiDarkWhite: #eaeaea;
+  --white: #ffffff;
 
-    --raleway: 'Raleway', sans-serif; 
-    --ubuntu: 'Ubuntu', sans-serif;
-    --ptserif: 'PT Serif', serif;
+  --raleway: "Raleway", sans-serif;
+  --ubuntu: "Ubuntu", sans-serif;
+  --ptserif: "PT Serif", serif;
 }
 
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: var(--gold) var(--black);
 }
 
-html, body {
-    background-color: var(--semiLightBlack);
-    color: var(--semiDarkWhite);
-    font-family: var(--ubuntu);
+html,
+body {
+  background-color: var(--semiLightBlack);
+  color: var(--semiDarkWhite);
+  font-family: var(--ubuntu);
 }
 
 button:active {
-    background-color: var(--darkGold);
-    transform: translate(0px, 0.3rem);
+  background-color: var(--darkGold);
+  transform: translate(0px, 0.3rem);
 }
 
 .active {
-    background: linear-gradient(125deg, var(--darkGold), var(--gold));
-    color: var(--semiLightBlack);
-    border-radius: 0.5rem;
+  background: linear-gradient(125deg, var(--darkGold), var(--gold));
+  color: var(--semiLightBlack);
+  border-radius: 0.5rem;
 }
 
-input[type=number] {
-    -moz-appearance: textfield;
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 @tailwind base;
