@@ -11,7 +11,7 @@ function Home() {
         alt="home-background"
       />
 
-      <article className="h-[500px] md:w-[510px] lg:w-auto flex flex-col justify-center items-start gap-8 ml-12 absolute z-10 top-40">
+      <article className="h-[500px] md:w-[510px] lg:w-auto flex flex-col justify-center items-start gap-8 ml-12 absolute z-10 top-32">
         <header className="font-ptserif text-[5.5rem] font-bold leading-[1]">
           <p>The</p>
 

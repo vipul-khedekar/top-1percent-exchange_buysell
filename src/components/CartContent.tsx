@@ -16,7 +16,7 @@ function CartContent({
   removeItem,
 }: CartContentProps) {
   return (
-    <section className="h-[10rem] w-[46rem] flex justify-between items-center gap-4 p-4 border-[2px] border-gold rounded-md scale-100 ease-in duration-200 hover:scale-105">
+    <section className="h-[10rem] w-[42rem] flex justify-between items-center gap-4 p-4 border-[2px] border-gold rounded-md scale-100 ease-in duration-200 hover:scale-105">
       <img
         className="h-[8rem] w-[10rem] rounded-md object-cover"
         src={image}

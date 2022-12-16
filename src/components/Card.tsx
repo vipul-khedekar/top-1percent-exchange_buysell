@@ -27,7 +27,7 @@ function Card({ id, owner, item, images, addItem }: CardProps) {
   const { main } = images;
 
   return (
-    <section className="h-[27rem] w-[22rem] bg-semiLightBlack flex flex-col justify-between items-center gap-4 border-[0.15rem] p-1 border-darkGold rounded-xl relative scale-100 ease-in duration-200 hover:border-gold hover:shadow-black hover:shadow-lg hover:scale-105">
+    <section className="h-[27rem] w-[21rem] bg-semiLightBlack flex flex-col justify-between items-center gap-4 border-[0.15rem] p-1 border-darkGold rounded-xl relative scale-100 ease-in duration-200 hover:border-gold hover:shadow-black hover:shadow-lg hover:scale-105">
       <img
         className="h-[14rem] w-[95%] mt-2 rounded-lg object-cover scale-100 ease-in duration-200 cursor-pointer hover:scale-105 hover:shadow-black hover:shadow-md"
         src={main}
