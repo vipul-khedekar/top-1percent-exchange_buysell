@@ -15,13 +15,14 @@ function Home() {
         <header className="font-ptserif text-[5.5rem] font-bold leading-[1]">
           <p>The</p>
 
-          <p className="-mt-7">
-            Top <span className="text-[7.5rem]">1%</span>'s
+          <p className="-mt-4">
+            Top <span className="text-[8rem]">1%</span>
+            's
           </p>
 
           <p>
             <span className="bg-gradient-to-tr from-darkGold to-gold bg-clip-text text-transparent">
-              Exchange
+              Thrift
             </span>{" "}
             Club
           </p>
@@ -31,12 +32,12 @@ function Home() {
           <p className="text-sm italic">‣ Buy or sell used luxury products.</p>
 
           <p className="text-sm italic">
-            ‣ A members-only secondhand high-value trading marketplace.
+            ‣ A premium secondhand yet high-value marketplace.
           </p>
 
           <p className="text-sm italic">
-            ‣ Browse through the catalogue of all available items put on sell by
-            people like you.
+            ‣ Browse through the catalogue of all available items by the like
+            minded people.
           </p>
         </aside>
 
