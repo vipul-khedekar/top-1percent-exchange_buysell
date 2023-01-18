@@ -7,3 +7,16 @@
 **A high-value marketplace to buy or sell secondhand luxury items. Browse, categorize, place an order, or get in touch with the owner through an ever-growing catalog. Rich color combinations with sparsely used accents and smooth transitions give a premium user experience.**
 
 **Tech used: ReactTS, Typescript, TailwindCSS, Redux, React Router, React Icons, Javascript, CSS, and HTML.**
+
+## 👉 Colors Used
+
+_(Source: Imagination. I just named them whatever I wanted, because why not.) 🤷_
+
+| Colors           | Hex Code |
+| ---------------- | -------- |
+| Gold             | #ad974f  |
+| Dark Gold        | #8e793e  |
+| White            | #ffffff  |
+| Semi Dark White  | #eaeaea  |
+| Semi Light Black | #231f20  |
+| Black            | #000000  |
