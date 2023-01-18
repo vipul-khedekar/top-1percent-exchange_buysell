@@ -20,3 +20,14 @@ _(Source: Imagination. I just named them whatever I wanted, because why not.) �
 | Semi Dark White  | #eaeaea  |
 | Semi Light Black | #231f20  |
 | Black            | #000000  |
+
+## 👉 Credits for Assets
+
+_Thank you very much_ 🙂
+
+| Assets               | Name          | Link                          |
+| -------------------- | ------------- | ----------------------------- |
+| Favicon              | Icons8        | https://icons8.com/           |
+| Fonts                | Google        | https://fonts.google.com/     |
+| Product Images       | James Edition | https://www.jamesedition.com/ |
+| Welcome Flash Screen | freepik       | https://www.freepik.com/      |
