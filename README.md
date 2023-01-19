@@ -10,7 +10,7 @@
 
 ## 👉 Colors Used
 
-_(Source: Imagination. I just named them whatever I wanted, because why not.) 🤷_
+_(Source: Imagination. I just named them whatever I want, because why not.) 🤷_
 
 | Colors           | Hex Code |
 | ---------------- | -------- |
