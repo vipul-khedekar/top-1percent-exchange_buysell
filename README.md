@@ -40,6 +40,33 @@ _The core functionalities of the app:_
   - For item card, cart strip, and seller's item strip.
   - Saved the development time by removing the need to write the same code for each recurring item.
 
+## 👉 Quality of Life and Design Features
+
+_Little details that cumulatively add to a great user experience:_
+
+- **Rich color combinations of a matte black background with sparsely used golden accents and smooth transitions give a premium user experience.**
+  - Golden is a linear gradient and is not overused.
+- **The Home and Store screens are separate for ease of user flow.**
+- **Buttons on the welcome screen are animated to catch attention.**
+- **Mouse hover effect.**
+  - Over the item card, the seller's item strip, cart strip, and images will slightly increase its size.
+  - Over the add to cart button will slightly increase its size.
+  - Other non-hovered elements stay unaffected by changes in neighboring elements.
+- **Animations.**
+  - Button downward click effect.
+  - Quick transitions.
+- **Short and quick visual cue on clicking the 'Can we talk?' button.**
+- **Short and quick visual cue on clicking the 'Take my money' button.**
+- **Show the current count of items in the cart.**
+- **Image details of items arranged as one big four small layouts.**
+- **The item description is a separate mini-scroll area.**
+- **The 'Return to Store' and 'Return to Home' buttons are on most empty screens for ease of navigation.**
+- **Clicking on the logo will take the user back to the Home screen.**
+- **A default picture is displayed if a seller-uploaded item is missing an image link.**
+- **Custom favicon.**
+- **Custom thin scrollbar design matching the theme.**
+- **Title of the web app in the browser's tab.**
+
 ## 👉 Colors Used
 
 _(Source: Imagination. I just named them whatever I want, because why not.) 🤷_
