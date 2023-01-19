@@ -29,6 +29,8 @@ _The core functionalities of the app:_
 - **Click the 'Take my money' button to add that item to the cart directly from its details page.**
 - **Nudge the Seller by clicking the 'Can we talk' button.**
 - **Add an item to the cart by clicking the '+' icon on the item card or its details page.**
+- **Only clicking the 'Add to cart' button will not open the item details page.**
+  - Canceled the bubbling ripple and prevented default behavior on click event.
 - **The cart screen.**
   - Remove an item individually.
   - The cart screen shows the total price of the selected items.
