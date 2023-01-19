@@ -14,7 +14,8 @@ _The core functionalities of the app:_
 
 - **Easy to switch between the 'Buyer' and 'Seller' tabs.**
 - **Lazy-loading images only load when they come into the visible part of the browser window, saving the user's bandwidth.**
-- **404 "Page not found" error page will appear upon entering an unknown URL.**
+- **WEBP image format for faster web loading speed and reduce image data size.**
+  - Saves the user's bandwidth.
 - **Browse all available items displayed as a scrollable grid.**
 - **Filter out the available catalog by categorizing.**
   - Categories include Cars, Bikes, Watches, Collectibles, Watches, Jets, and Helicopters.
@@ -35,6 +36,7 @@ _The core functionalities of the app:_
   - Remove an item individually.
   - The cart screen shows the total price of the selected items.
 - **Easy navigation with the 'Return to Store' and 'Return to Home' buttons on the Cart and 404 Error page.**
+- **404 "Page not found" error page will appear upon entering an unknown URL.**
 - **Used appropriate HTML tags promoting browser accessibility settings for specially-abled users.**
 - **Responsive design.**
   - Switch smoothly between 16:9 desktop, and 3:4 tablet screen sizes, and loosely also compatible with narrow mobile screen sizes.
