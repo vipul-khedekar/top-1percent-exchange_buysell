@@ -8,6 +8,38 @@
 
 **Tech used: ReactTS, Typescript, TailwindCSS, Redux, React Router, React Icons, Javascript, CSS, and HTML.**
 
+## 👉 Major Features
+
+_The core functionalities of the app:_
+
+- **Easy to switch between the 'Buyer' and 'Seller' tabs.**
+- **Lazy-loading images only load when they come into the visible part of the browser window, saving the user's bandwidth.**
+- **404 "Page not found" error page will appear upon entering an unknown URL.**
+- **Browse all available items displayed as a scrollable grid.**
+- **Filter out the available catalog by categorizing.**
+  - Categories include Cars, Bikes, Watches, Collectibles, Watches, Jets, and Helicopters.
+  - An 'All' option to reset back the filtering.
+- **Prices are in US currency format with the prefix rupee (₹).**
+- **The seller screen contains a form for uploading a new item for sale.**
+  - The form includes the Item's title, Price, Seller name, and Image (optional).
+- **Uploaded items are visible in the personal listings area, below the form.**
+- **Display item details upon clicking on it.**
+  - Item's title, price, year of making, and description.
+  - The Seller's name and location.
+- **Click the 'Take my money' button to add that item to the cart directly from its details page.**
+- **Nudge the Seller by clicking the 'Can we talk' button.**
+- **Add an item to the cart by clicking the '+' icon on the item card or its details page.**
+- **The cart screen.**
+  - Remove an item individually.
+  - The cart screen shows the total price of the selected items.
+- **Easy navigation with the 'Return to Store' and 'Return to Home' buttons on the Cart and 404 Error page.**
+- **Used appropriate HTML tags promoting browser accessibility settings for specially-abled users.**
+- **Responsive design.**
+  - Switch smoothly between 16:9 desktop, and 3:4 tablet screen sizes, and loosely also compatible with narrow mobile screen sizes.
+- **Wrote reusable components.**
+  - For item card, cart strip, and seller's item strip.
+  - Saved the development time by removing the need to write the same code for each recurring item.
+
 ## 👉 Colors Used
 
 _(Source: Imagination. I just named them whatever I want, because why not.) 🤷_
