@@ -100,44 +100,44 @@ _Thank you very much_ 🙂
 <div align="center">
     <img width="70%" height="70%" src="https://firebasestorage.googleapis.com/v0/b/github-profile-v1.appspot.com/o/projects%2F1percent-thrift-club%2FScreenshot%202022-12-21%20at%2020-07-25%20The%20Top%201%20Thrift%20Club%20-%20Buy%20or%20Sell%20used%20luxury%20items%20at%20fair%20prices.webp?alt=media&token=4c9ef80f-e58e-4aaa-b4ee-c0eaa6d16f26" alt="buyer-screen">
 </div>
-<figcaption align="center">(Fig.1 - Store's Buyer Screen)</figcaption><br />
+<p align="center">(Fig.1 - Store's Buyer Screen)</p><br />
 
 <div align="center">
     <img width="70%" height="70%" src="https://firebasestorage.googleapis.com/v0/b/github-profile-v1.appspot.com/o/projects%2F1percent-thrift-club%2FScreenshot%202022-12-21%20at%2020-07-54%20The%20Top%201%20Thrift%20Club%20-%20Buy%20or%20Sell%20used%20luxury%20items%20at%20fair%20prices.webp?alt=media&token=4ff1d052-29b4-45e7-be17-97dec3bc798c" alt="seller-screen">
 </div>
-<figcaption align="center">(Fig.2 - Store's Seller Screen)</figcaption><br />
+<p align="center">(Fig.2 - Store's Seller Screen)</p><br />
 
 <div align="center">
     <img width="70%" height="70%" src="https://firebasestorage.googleapis.com/v0/b/github-profile-v1.appspot.com/o/projects%2F1percent-thrift-club%2FScreenshot%202022-12-21%20at%2020-09-33%20The%20Top%201%20Thrift%20Club%20-%20Buy%20or%20Sell%20used%20luxury%20items%20at%20fair%20prices.webp?alt=media&token=998fd893-d3ac-4927-9516-07b1cb4d0eb8" alt="seller-listings">
 </div>
-<figcaption align="center">(Fig.3 - Seller's Listings)</figcaption><br />
+<p align="center">(Fig.3 - Seller's Listings)</p><br />
 
 <div align="center">
     <img width="70%" height="70%" src="https://firebasestorage.googleapis.com/v0/b/github-profile-v1.appspot.com/o/projects%2F1percent-thrift-club%2FScreenshot%202022-12-21%20at%2020-07-31%20The%20Top%201%20Thrift%20Club%20-%20Buy%20or%20Sell%20used%20luxury%20items%20at%20fair%20prices.webp?alt=media&token=178a6f8a-fa5b-4562-beda-6d3a8e8da0cf" alt="navbar">
 </div>
-<figcaption align="center">(Fig.4 - Navbar)</figcaption><br />
+<p align="center">(Fig.4 - Navbar)</p><br />
 
 <div align="center">
     <img width="70%" height="70%" src="https://firebasestorage.googleapis.com/v0/b/github-profile-v1.appspot.com/o/projects%2F1percent-thrift-club%2FScreenshot%202022-12-21%20at%2020-11-20%20The%20Top%201%20Thrift%20Club%20-%20Buy%20or%20Sell%20used%20luxury%20items%20at%20fair%20prices.webp?alt=media&token=bd0c4a3a-6a5e-4033-b6c4-78968050e7c0" alt="sticky-navbar">
 </div>
-<figcaption align="center">(Fig.5 - Sticky Navbar)</figcaption><br />
+<p align="center">(Fig.5 - Sticky Navbar)</p><br />
 
 <div align="center">
     <img width="70%" height="70%" src="https://firebasestorage.googleapis.com/v0/b/github-profile-v1.appspot.com/o/projects%2F1percent-thrift-club%2FScreenshot%202022-12-21%20at%2020-07-39%20The%20Top%201%20Thrift%20Club%20-%20Buy%20or%20Sell%20used%20luxury%20items%20at%20fair%20prices.webp?alt=media&token=cd35c6e5-c9bc-4f77-aead-1159ee17acf1" alt="filters">
 </div>
-<figcaption align="center">(Fig.6 - Category Filters)</figcaption><br />
+<p align="center">(Fig.6 - Category Filters)</p><br />
 
 <div align="center">
     <img width="70%" height="70%" src="https://firebasestorage.googleapis.com/v0/b/github-profile-v1.appspot.com/o/projects%2F1percent-thrift-club%2FScreenshot%202022-12-21%20at%2020-11-05%20The%20Top%201%20Thrift%20Club%20-%20Buy%20or%20Sell%20used%20luxury%20items%20at%20fair%20prices.webp?alt=media&token=fd4eabd8-9d53-40af-a9b5-7b49f67562db" alt="item-details">
 </div>
-<figcaption align="center">(Fig.7 - Item Details)</figcaption><br />
+<p align="center">(Fig.7 - Item Details)</p><br />
 
 <div align="center">
     <img width="70%" height="70%" src="https://firebasestorage.googleapis.com/v0/b/github-profile-v1.appspot.com/o/projects%2F1percent-thrift-club%2FScreenshot%202022-12-21%20at%2020-10-33%20The%20Top%201%20Thrift%20Club%20-%20Buy%20or%20Sell%20used%20luxury%20items%20at%20fair%20prices.webp?alt=media&token=94d65d06-d0f6-48c7-83ec-f3aa6955aac9" alt="cart-items">
 </div>
-<figcaption align="center">(Fig.8 - Cart)</figcaption><br />
+<p align="center">(Fig.8 - Cart)</p><br />
 
 <div align="center">
     <img width="70%" height="70%" src="https://firebasestorage.googleapis.com/v0/b/github-profile-v1.appspot.com/o/projects%2F1percent-thrift-club%2FScreenshot%202022-12-21%20at%2020-11-37%20The%20Top%201%20Thrift%20Club%20-%20Buy%20or%20Sell%20used%20luxury%20items%20at%20fair%20prices.webp?alt=media&token=58214367-6e7a-46fd-8c45-2716271231b7" alt="404-error">
 </div>
-<figcaption align="center">(Fig.9 - 404 Page Not Found Custom Redirect)</figcaption><br />
+<p align="center">(Fig.9 - 404 Page Not Found Custom Redirect)</p>
