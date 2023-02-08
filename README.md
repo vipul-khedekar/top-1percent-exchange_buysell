@@ -1,4 +1,4 @@
-# 💎 The top 1% Thrift Club - Trade used luxury items
+# 💎 The top 1% Thrift Club - Marketplace to trade secondhand luxury items
 
 <div align="center">
     <img width="90%" height="90%" src="https://firebasestorage.googleapis.com/v0/b/github-profile-v1.appspot.com/o/projects%2F1percent-thrift-club%2FScreenshot%202022-12-21%20at%2020-07-02%20The%20Top%201%20Thrift%20Club%20-%20Buy%20or%20Sell%20used%20luxury%20items%20at%20fair%20prices.webp?alt=media&token=dffc580c-3b84-4dd8-9d64-82a1ea7d6822" alt="home-page">
